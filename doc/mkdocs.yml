@@ -1,0 +1,16 @@
+site_name: MotorController
+nav:
+  - 初期画面: index.md
+  - introduction.md
+  - material.md
+  - section1:
+      section1-1:
+        section1-1-1:
+          section1-1-1.md
+      section1-2:
+        section1-2-1:
+          section1-2-1.md
+  - section2:
+    - page2-1.md
+    - page2-2.md
+
