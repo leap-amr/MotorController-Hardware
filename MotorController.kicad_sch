@@ -2248,60 +2248,6 @@
         )
       )
     )
-    (symbol "Switch:SW_Push" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "SW" (at 1.27 2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "SW_Push" (at 0 -1.524 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "switch normally-open pushbutton push-button" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Push button switch, generic, two pins" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "SW_Push_0_1"
-        (circle (center -2.032 0) (radius 0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 1.27)
-            (xy 0 3.048)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.54 1.27)
-            (xy -2.54 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 2.032 0) (radius 0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (pin passive line (at -5.08 0 0) (length 2.54)
-          (name "1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 5.08 0 180) (length 2.54)
-          (name "2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "Switch:SW_SPDT" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
       (property "Reference" "SW" (at 0 4.318 0)
         (effects (font (size 1.27 1.27)))
@@ -2720,6 +2666,9 @@
   (junction (at 20.32 246.38) (diameter 0) (color 0 0 0 0)
     (uuid 2c206664-db7b-416d-ae6f-83598e63bb77)
   )
+  (junction (at 54.61 46.99) (diameter 0) (color 0 0 0 0)
+    (uuid 2c6fdc50-77e6-4599-864f-2b498984e5b8)
+  )
   (junction (at 57.15 46.99) (diameter 0) (color 0 0 0 0)
     (uuid 2d48ba0f-4aa6-4156-9a56-e96e5a4d7c4a)
   )
@@ -2938,6 +2887,9 @@
   )
   (junction (at 172.72 26.67) (diameter 0) (color 0 0 0 0)
     (uuid b0f63391-7bf4-4e85-b9a0-2cbc88eb8736)
+  )
+  (junction (at 54.61 62.23) (diameter 0) (color 0 0 0 0)
+    (uuid b19cd1ee-6ea8-4435-8502-e060e3512cd9)
   )
   (junction (at 179.07 63.5) (diameter 0) (color 0 0 0 0)
     (uuid b28fd814-5730-43ea-854b-7386be115a86)
@@ -3564,7 +3516,7 @@
     (stroke (width 0) (type default))
     (uuid 2ffedd19-1b2b-4ddd-a407-22d5922d7b18)
   )
-  (wire (pts (xy 49.53 46.99) (xy 57.15 46.99))
+  (wire (pts (xy 49.53 46.99) (xy 54.61 46.99))
     (stroke (width 0) (type default))
     (uuid 30133639-b752-4681-a48d-e3b133aa6aac)
   )
@@ -3748,7 +3700,7 @@
     (stroke (width 0) (type default))
     (uuid 41ab4084-690d-41e6-827e-ca756c8577ec)
   )
-  (wire (pts (xy 49.53 62.23) (xy 57.15 62.23))
+  (wire (pts (xy 49.53 62.23) (xy 54.61 62.23))
     (stroke (width 0) (type default))
     (uuid 4282c5b8-34ac-492d-a5a4-1f7f7631244b)
   )
@@ -4796,6 +4748,10 @@
     (stroke (width 0) (type default))
     (uuid a2e41c49-5a7e-4ad7-9ccf-a62bdbbffb5c)
   )
+  (wire (pts (xy 54.61 46.99) (xy 54.61 49.53))
+    (stroke (width 0) (type default))
+    (uuid a39cefba-bf74-485f-be49-b9e0b62d25da)
+  )
   (wire (pts (xy 130.81 36.83) (xy 138.43 36.83))
     (stroke (width 0) (type default))
     (uuid a3b0eb76-e40e-4128-b2e0-7d5c1e8b9bb1)
@@ -5488,6 +5444,10 @@
     (stroke (width 0) (type default))
     (uuid dec14230-e961-40da-a2bc-38d6da06bd18)
   )
+  (wire (pts (xy 54.61 62.23) (xy 57.15 62.23))
+    (stroke (width 0) (type default))
+    (uuid ded6c2f6-551b-49dc-a118-2e160bc28235)
+  )
   (wire (pts (xy 287.02 33.02) (xy 287.02 35.56))
     (stroke (width 0) (type default))
     (uuid df79b73b-d890-4454-9179-836f50926da8)
@@ -5763,6 +5723,14 @@
   (wire (pts (xy 312.42 198.12) (xy 327.66 198.12))
     (stroke (width 0) (type default))
     (uuid fd1c65c1-fce7-4d7a-adf2-7a0da5c6abcf)
+  )
+  (wire (pts (xy 54.61 59.69) (xy 54.61 62.23))
+    (stroke (width 0) (type default))
+    (uuid fd69243a-db17-4478-ad4a-ca57300415db)
+  )
+  (wire (pts (xy 54.61 46.99) (xy 57.15 46.99))
+    (stroke (width 0) (type default))
+    (uuid fd89d22f-2aa4-4999-a8cf-d6dce576800e)
   )
   (wire (pts (xy 124.46 48.26) (xy 140.97 48.26))
     (stroke (width 0) (type default))
@@ -6093,38 +6061,38 @@
     (property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32f303k8.pdf" (at 97.79 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 598e3716-3d3a-43af-82ff-5a0122231f1d))
-    (pin "10" (uuid 5aca51ec-6099-4029-bb56-b10822673440))
-    (pin "11" (uuid 2a77a1cd-578a-43ed-b35d-79887adea652))
-    (pin "12" (uuid a119a66b-84cd-4ffc-a672-f20777dd53d1))
-    (pin "13" (uuid 28e11f1a-cf43-4a18-8045-df39df6bacc8))
-    (pin "14" (uuid 1ac8f4bc-3500-4ca0-91c6-27c218b4e817))
-    (pin "15" (uuid 7b61e31f-3a1e-4421-8f9c-f5e16bca25f5))
-    (pin "16" (uuid 2b6a2ddb-7199-487f-8497-1043dfbb0317))
-    (pin "17" (uuid 7d33e520-f6aa-46f1-a6b2-64c2025f09ed))
-    (pin "18" (uuid aba91492-9c3a-4fd8-9a89-5774c6fd1958))
-    (pin "19" (uuid 4d87961a-f9a3-4763-a112-7111f0f9a094))
-    (pin "2" (uuid 902b725e-e028-4874-b246-90c058559a3b))
-    (pin "20" (uuid 159f546d-96f2-478d-bed2-2ce71d0c86a6))
-    (pin "21" (uuid b08b98de-0456-4643-b421-d37fd538e9d2))
-    (pin "22" (uuid 000364ac-92cc-4ce1-a775-9a3779b70c45))
-    (pin "23" (uuid 1da7c706-1a34-4ed2-abeb-1d91b5aba897))
-    (pin "24" (uuid 3863b428-a63d-42f6-9e0b-fdc32c12771d))
-    (pin "25" (uuid 4daac8c0-d8e8-4aee-8203-1d8902d09bb4))
-    (pin "26" (uuid dffb21b9-4986-4bb9-a47b-b75097e0d9e7))
-    (pin "27" (uuid 0e808a2d-9c21-40b0-9086-7278727de7e6))
-    (pin "28" (uuid 534810ee-d5ee-4d8e-a565-6d6c0273ede9))
-    (pin "29" (uuid 15dbe8f4-850e-4230-8bfe-ab761aa35a18))
-    (pin "3" (uuid 43ff04d3-6490-46aa-a369-c1ede5394578))
-    (pin "30" (uuid 5aa1dd70-c01b-4f77-880a-89665376ea08))
-    (pin "31" (uuid f45088b6-aa93-4503-b5ab-44a77a99678b))
-    (pin "32" (uuid d82d8f97-9b64-4ad5-adf3-9b67040694d4))
-    (pin "4" (uuid 7d734391-6bcb-4dd8-8e04-230a6b58f82e))
-    (pin "5" (uuid 1d89701c-a09d-45ad-864e-2ce41261bf95))
-    (pin "6" (uuid 8cd49b46-6811-4f60-aded-50f8d038e3e8))
-    (pin "7" (uuid 0d4ee4ed-2707-450c-88eb-b4f70f87fb4c))
-    (pin "8" (uuid 646cc23e-e512-43d1-9951-5db9d53d3cfb))
-    (pin "9" (uuid 3633eb7f-4e71-429d-b733-4fb3da084f3b))
+    (pin "1" (uuid 918cf86e-4689-4169-8930-365fb850cd96))
+    (pin "10" (uuid f52b0c4b-0168-47c0-af76-347152ac048d))
+    (pin "11" (uuid a749afc6-dd83-42a1-83a8-b64521120bab))
+    (pin "12" (uuid 903410c8-a816-4e04-949c-e5d97bbc8983))
+    (pin "13" (uuid 00344d94-a97f-4363-938a-fa3927c7b147))
+    (pin "14" (uuid 67cff16f-ddec-46a8-b7ad-7091105e0752))
+    (pin "15" (uuid 22a781e1-ddd0-43d4-89b5-748736c39e57))
+    (pin "16" (uuid 9ca292e7-ff72-4921-8039-398b832478ef))
+    (pin "17" (uuid 9404e578-2a94-420b-97e2-3f51b06bd0bc))
+    (pin "18" (uuid 85e7e88a-9192-40ab-8c24-dd27913c3a15))
+    (pin "19" (uuid 37509ee5-d59a-4f5c-bbaf-e8c2f34d1831))
+    (pin "2" (uuid 6f57bf85-e2a7-4126-9923-8ed8fae3430d))
+    (pin "20" (uuid 3b01ca66-8622-49a9-b08c-2a45a32b7f15))
+    (pin "21" (uuid 57f76959-02ee-4f09-a5a7-72dd6ecfb5f0))
+    (pin "22" (uuid 2a9a8eb7-c1c9-4169-82b1-c5517d79946b))
+    (pin "23" (uuid a5b31a70-81a9-4443-a73e-0c3f0bb7bc04))
+    (pin "24" (uuid 90a96877-9b3d-47aa-8adb-f405bbc6188c))
+    (pin "25" (uuid a8a07e15-e456-453a-a118-330dec318722))
+    (pin "26" (uuid e323de83-6914-4c90-8422-75cd70a375c0))
+    (pin "27" (uuid 3893d7d2-f651-45ba-aa35-16ee0415d2a1))
+    (pin "28" (uuid 671c45e6-0ab0-4641-915e-2ca60db0e6f2))
+    (pin "29" (uuid f888c441-0f4c-4dd5-b937-20c4127d8048))
+    (pin "3" (uuid 1fa56332-85d8-48d2-b265-c252d9c9eda4))
+    (pin "30" (uuid 48b4ec5c-a191-49e7-aa53-6ac7e4dde31a))
+    (pin "31" (uuid 582df1fb-8b79-49df-bd1b-922292c80e8c))
+    (pin "32" (uuid 2490e3ac-bb1d-4a52-b461-01fde72f7e63))
+    (pin "4" (uuid 11489c7f-c0f9-4d6b-b7b1-9f8f0f316c11))
+    (pin "5" (uuid c37cf152-f455-4605-adb2-9413ad3c79c5))
+    (pin "6" (uuid aff0efbb-55bc-41ff-810d-bee85d7cb8da))
+    (pin "7" (uuid 9d969791-8545-4c30-8b15-ec7346a5de0b))
+    (pin "8" (uuid 928f9648-ac78-40bd-8014-09946887e3c8))
+    (pin "9" (uuid 3c8c628b-e460-4b07-a63b-08ad5254d716))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -6143,14 +6111,14 @@
     (property "Value" "100n" (at 224.79 153.67 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 221.9452 156.21 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 221.9452 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 220.98 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 023836af-d83f-4481-ac74-67c30d4b20f2))
-    (pin "2" (uuid b67ab469-ea5a-4501-ba55-38708c5f1617))
+    (pin "1" (uuid d4ee8004-67ad-49de-b579-04e38a0bcc54))
+    (pin "2" (uuid 9bc5e294-f5fc-4c80-a590-2e0cce63209c))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -6175,14 +6143,14 @@
     (property "Datasheet" "~" (at 341.63 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 282542e9-8f4c-446b-9f6e-02eef8d383bb))
-    (pin "2" (uuid 270c250b-a75b-4f79-b690-7b00e1891669))
-    (pin "7" (uuid 426ab40b-784c-41bb-9ee4-8f10093f971e))
-    (pin "8" (uuid 14e0cd61-2add-47ed-9fc4-a6d33e3417f9))
-    (pin "3" (uuid c177fdda-5098-471f-b981-4e4f5b96a179))
-    (pin "4" (uuid 8a7806a3-fec7-46e3-856d-d8d2f605e85e))
-    (pin "5" (uuid 2af47cb7-d1be-410f-9869-5ea7cc517baf))
-    (pin "6" (uuid b32ceb46-4725-4f8a-a1a1-3e119a2ffa3f))
+    (pin "1" (uuid 3b9dd32d-e1ee-4249-ad9f-588bf55e1d83))
+    (pin "2" (uuid e1843724-6a23-491a-8b6a-69a1eef5a57b))
+    (pin "7" (uuid 11685551-bbd5-4737-97fb-51fd00a3055b))
+    (pin "8" (uuid e3e3a3f8-157c-40a4-b4ea-a4152fbf0449))
+    (pin "3" (uuid 34dab67d-d508-4089-8501-54ea6bc5e4b0))
+    (pin "4" (uuid 9bbd3d6d-5a2e-4a5f-a0d6-50ce9edb7dcc))
+    (pin "5" (uuid 42b850ae-8135-49be-828a-d83a5392cd28))
+    (pin "6" (uuid e3ce410b-51b8-42f0-86d3-bd40fa8d4162))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -6201,14 +6169,14 @@
     (property "Value" "C" (at 176.53 34.29 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 173.6852 36.83 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 173.6852 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 172.72 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a108ad1f-1aa3-49e8-be7d-87d781586043))
-    (pin "2" (uuid c4bb5267-726e-46a4-85b8-788962677828))
+    (pin "1" (uuid 95718390-5f17-4cff-963c-7f8a1d579983))
+    (pin "2" (uuid acd55167-990e-438d-ac1b-9bb92ebcf3e0))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -6227,14 +6195,14 @@
     (property "Value" "C" (at 36.83 137.16 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 33.9852 139.7 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 33.9852 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 33.02 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b00abd5f-395a-43da-bde3-9bba4a6d3fc9))
-    (pin "2" (uuid ab54a78a-99a9-4542-97ac-0ff2c964e765))
+    (pin "1" (uuid 485aa8ac-a8a8-4dd8-858b-60353375a64a))
+    (pin "2" (uuid e2736832-587e-417e-b08d-dd02d8afdb09))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -6284,8 +6252,8 @@
     (property "Datasheet" "~" (at 323.85 191.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2c2683fc-6b3b-41e3-bd58-c9527bb76b0d))
-    (pin "2" (uuid a3eb6227-1101-4ddd-bd7c-a491d0a0e417))
+    (pin "1" (uuid 708009a0-a591-4cf7-b415-b18c03206e31))
+    (pin "2" (uuid 32ac937e-9558-449c-9798-7a4de620ad57))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -6329,14 +6297,14 @@
     (property "Value" "C" (at 321.31 81.28 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 317.5 87.3252 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 317.5 87.3252 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 321.31 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 53225115-be55-43b4-b857-405dff3f3d24))
-    (pin "2" (uuid 6d5e4832-d12a-4809-b4a6-d1884884af83))
+    (pin "1" (uuid 38193707-330f-4fe6-9a13-65b64f09dc11))
+    (pin "2" (uuid 0023d569-39d1-4b23-90f5-00dfe90011c3))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -6385,35 +6353,35 @@
     (property "Arrow Price/Stock" "https://www.arrow.com/en/products/a3921klptr-t/allegro-microsystems?region=nac" (at 314.96 193.04 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (pin "1" (uuid 1d013dc9-f80d-42a9-9c09-8ae0154c928f))
-    (pin "10" (uuid 84a5e966-381f-4720-bf3e-72a6956c0a7c))
-    (pin "11" (uuid 18515537-8027-4283-b64f-4ffcc2dd5c42))
-    (pin "12" (uuid 6bf2fdac-76f1-4692-8b7a-3a9fa034573f))
-    (pin "13" (uuid cdd397a9-ea8d-4d30-99d2-82394eb80020))
-    (pin "14" (uuid cd17ba3e-265f-4798-8076-e4c257defc34))
-    (pin "15" (uuid 79d70577-3553-4943-bd2b-7cc3ec277de5))
-    (pin "16" (uuid 62f12b24-a557-4445-a8b6-1894dec195aa))
-    (pin "17" (uuid 779966f7-026b-4f4e-9dd4-30abafd1521a))
-    (pin "18" (uuid 4f008ce4-7173-481a-a5b0-b9a687480141))
-    (pin "19" (uuid 59e04675-17d5-4c7b-95dd-cc3dd463ab47))
-    (pin "2" (uuid 78a7f4b7-77ad-45d0-8a88-28dfc018480d))
-    (pin "20" (uuid ee349fc8-6bec-4b8e-a6b9-8738e4456d40))
-    (pin "21" (uuid 629bb1ff-fe73-4534-9a03-c9a6f3b73cbc))
-    (pin "22" (uuid e06680c5-01b7-4586-8d53-135f068718c4))
-    (pin "23" (uuid 072bd244-0214-424c-9a1c-dead9b423f84))
-    (pin "24" (uuid 2b1ce4a2-9f65-4a1f-a583-7ce94e42ebef))
-    (pin "25" (uuid f4ad5345-48c1-4743-946d-0a9c1ef16c87))
-    (pin "26" (uuid 2de02b45-0839-4f2e-9101-db103cc50fc5))
-    (pin "27" (uuid e56b6414-6fd8-49f9-ae8e-763f7d828795))
-    (pin "28" (uuid ad7ce205-6115-4b81-a17d-143366404f76))
-    (pin "29" (uuid 9a7931cd-0a7d-4e45-94d8-fe7e43a0d73c))
-    (pin "3" (uuid ab1abb24-a27d-4b92-bd16-803b56f7ea71))
-    (pin "4" (uuid 67732cdf-e96a-4807-9396-b32f8b33a65f))
-    (pin "5" (uuid 5939c4cd-9293-433b-99b3-5873cceda95d))
-    (pin "6" (uuid 08033fdf-a378-4ad4-9b3b-bf635f51f3a1))
-    (pin "7" (uuid ad2ab058-78fc-44ae-b793-4daa38aae635))
-    (pin "8" (uuid efafd242-7007-4f04-afce-aa4b4f55e5f9))
-    (pin "9" (uuid 3142c905-81f9-4d8a-936b-a31f68e4ae4a))
+    (pin "1" (uuid 37aa3e4d-78c0-474d-9712-5e7279b4aebe))
+    (pin "10" (uuid 4e1cf7d2-ee42-4a1f-a084-1584166242c3))
+    (pin "11" (uuid d65f767c-76c9-4c0c-b6e1-ea66b1ec2c90))
+    (pin "12" (uuid 91cb4430-31ca-48d1-893b-d9941693911a))
+    (pin "13" (uuid 124b9c7d-ed8b-4c87-85cf-ba40f726578e))
+    (pin "14" (uuid a630db5d-5d9d-4eb2-a305-7265800d7a15))
+    (pin "15" (uuid ca3fb8a1-5c06-4a57-920a-b2ec1aa16c06))
+    (pin "16" (uuid 452f06f1-31d8-4327-8e65-1dc47aa28685))
+    (pin "17" (uuid 8bc6fc65-afd8-42ba-a32d-650ba4880b3a))
+    (pin "18" (uuid 69fa8181-20cb-47a7-a729-007bfb042ce6))
+    (pin "19" (uuid a16a01c8-d9fe-49bb-be17-e75918532780))
+    (pin "2" (uuid 0c2a221a-bfab-4ced-aeae-8f30bbe758ad))
+    (pin "20" (uuid 6a966fbe-905f-47e5-aef7-897325769cf5))
+    (pin "21" (uuid bbf23c4b-2ea0-42a2-9ad1-9bc2f0ec363e))
+    (pin "22" (uuid 21c5795e-83a5-4689-96f7-9203d851ef47))
+    (pin "23" (uuid 285c3ce8-d540-488c-9018-1cc049ecc3fe))
+    (pin "24" (uuid 7a22f62f-6411-4878-b331-fe8b60ca6359))
+    (pin "25" (uuid ed6e1777-f466-429c-b817-0cb46d0637f6))
+    (pin "26" (uuid d5f57641-d69c-482e-9cbb-e60e9219fc32))
+    (pin "27" (uuid ea1da01e-ca14-4566-946a-1f6e61cbf737))
+    (pin "28" (uuid 8125cf7b-6bf6-4836-bc6a-1008024f6b28))
+    (pin "29" (uuid d3a072bc-eeb1-492e-947a-e9ca3c41bce3))
+    (pin "3" (uuid c4b14a31-0549-471f-abfe-aab6afc4024e))
+    (pin "4" (uuid 1b6da7dc-7261-4c6d-9359-4234561a518d))
+    (pin "5" (uuid b81991de-9590-45cf-97c7-fa97696c4743))
+    (pin "6" (uuid ceed9acd-e73b-462f-87f9-bb1d77a84eed))
+    (pin "7" (uuid 08bd40e1-faf5-48bc-9232-62cfefd306ff))
+    (pin "8" (uuid d416848c-6e49-4c54-a042-eabe3e4fea69))
+    (pin "9" (uuid cd8585b9-e1fc-4f41-b591-61d45b61984d))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -6488,12 +6456,12 @@
     (property "Datasheet" "" (at 187.96 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ee392e3c-da3d-4ac6-8ad1-1bab031336db))
-    (pin "2" (uuid 2b907285-3d50-4e2d-bcd7-065970fd98cc))
-    (pin "3" (uuid 04ae2ecd-701b-41f6-9714-9f6f1c1481eb))
-    (pin "4" (uuid f63d8fdd-9e2d-48d4-a037-10347e504a91))
-    (pin "5" (uuid 2a5996d6-9207-4c0a-9cf6-4dac552669da))
-    (pin "6" (uuid dce37b76-327a-433c-b9f8-7b21e69510bb))
+    (pin "1" (uuid f51827d5-d92a-462b-a532-ed2ea7d49350))
+    (pin "2" (uuid 6f7fb63f-53e6-4753-ac2e-bf350233e03e))
+    (pin "3" (uuid 05335011-d633-4bed-a94d-8398c20cc700))
+    (pin "4" (uuid f83ce26d-15f0-4ed1-88f8-882ebec29c22))
+    (pin "5" (uuid 1f9b436c-ea3e-4ba9-9825-e76d4af0631a))
+    (pin "6" (uuid 6979a53c-c1e5-4bf6-833f-7a64b43b511a))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -6512,14 +6480,14 @@
     (property "Value" "C" (at 36.83 166.37 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 33.9852 168.91 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 33.9852 168.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 33.02 165.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 629934a4-1b63-482f-ad32-2aad72010a57))
-    (pin "2" (uuid 74d2b3ff-f81c-490a-b3ef-e63b304255ad))
+    (pin "1" (uuid 296377b4-1716-4b21-a3fc-50a6a940e48e))
+    (pin "2" (uuid 5f644506-3fee-4291-a884-3c2e0988a67f))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -6544,8 +6512,8 @@
     (property "Datasheet" "~" (at 71.12 233.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c02adcbf-0d67-4701-a47a-b337728abc60))
-    (pin "2" (uuid 4bcd417f-0ad3-4176-b28a-0df7602dcb44))
+    (pin "1" (uuid 17dfbfa1-1c46-47ca-9c34-73a42852924d))
+    (pin "2" (uuid bb13b7fc-a9bf-4877-b315-27dcb18a2b6a))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -6570,16 +6538,16 @@
     (property "Datasheet" "~" (at 46.99 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ae4ef041-4f5c-4934-944b-076d948dc7ad))
-    (pin "10" (uuid beba9204-ae24-4cb0-92f3-c1e9e12c91e9))
-    (pin "2" (uuid 89a99a92-df88-46d5-8ef4-0d9eefaa439c))
-    (pin "3" (uuid bc4adeee-dd62-4424-8d76-d55df4fa2acb))
-    (pin "4" (uuid 320839dc-0ee2-4096-873c-93adfde433a1))
-    (pin "5" (uuid 6d448277-f042-4eb6-b1fe-267bcb52a58d))
-    (pin "6" (uuid 678c6cba-fc86-41cf-bebe-02592bdb11dc))
-    (pin "7" (uuid 49ad0d9a-f6f6-4933-af49-a7a41c809f73))
-    (pin "8" (uuid 7fb72fe7-96a0-4a22-afa0-7b323b7d9beb))
-    (pin "9" (uuid facead71-25fc-4dd5-826b-5d35cded248b))
+    (pin "1" (uuid 28649948-db79-4dca-86ac-51c169ce546e))
+    (pin "10" (uuid f3b73d39-279e-40c8-90cf-3d9a6a235c02))
+    (pin "2" (uuid 0d877d05-d4be-4028-8b56-84b57b7e0903))
+    (pin "3" (uuid 92ce0c28-bd7e-4aa1-b1bb-213ca8d8a31d))
+    (pin "4" (uuid 68f1ce0f-5eae-4d71-a72a-053c6049926b))
+    (pin "5" (uuid 7f269da9-834f-4a43-80a1-fc4d3e305f32))
+    (pin "6" (uuid d7eef747-c23a-476f-be91-1b0eb3115b11))
+    (pin "7" (uuid 3f2f72ae-4bbd-4916-b7a3-f549f563e734))
+    (pin "8" (uuid 8eb09a59-5a86-46e4-ba6f-77c872a10460))
+    (pin "9" (uuid 41e883b1-8a25-4bbe-a4d3-5b095b126b94))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -6629,8 +6597,8 @@
     (property "Datasheet" "~" (at 227.33 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 749f2406-d474-4e47-93b4-e77dd47813be))
-    (pin "2" (uuid 79c9ae62-3b69-46ce-88db-d5383b28c86c))
+    (pin "1" (uuid 59484370-bc19-42d4-b417-fb1e3c1534cd))
+    (pin "2" (uuid 3643da1b-8d0a-4e74-b6f5-591efa021872))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -6655,8 +6623,8 @@
     (property "Datasheet" "~" (at 323.85 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid be295669-137f-46ac-9261-a1810ce35d5a))
-    (pin "2" (uuid 3d2592ab-fff2-4268-b633-d4dbf8bf0a60))
+    (pin "1" (uuid 2dadc9e6-1a4c-4c4d-a7b0-79801604853f))
+    (pin "2" (uuid 70b45b9b-b3e4-4670-82fb-d17ced55ca51))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -6706,14 +6674,14 @@
     (property "Datasheet" "~" (at 341.63 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b4f073dc-f0cf-4d43-9519-d1ad2880a8ee))
-    (pin "2" (uuid db3629fb-130f-415a-b001-5f59bd01bfb2))
-    (pin "7" (uuid 712aed87-c900-4643-bbcf-2e2874645301))
-    (pin "8" (uuid 2804f459-abf1-4e0f-b1af-573235854bd5))
-    (pin "3" (uuid c0b0886b-e9c0-4303-b966-d6049de7fd81))
-    (pin "4" (uuid 890bdd84-d95f-4601-a3e5-2c2baa1cc392))
-    (pin "5" (uuid bed40d24-b7ee-4140-a3d0-256f5886d424))
-    (pin "6" (uuid d5ed3af5-12b4-42b9-8a08-200d063a4d96))
+    (pin "1" (uuid 10bda9b9-f9b3-4a53-b658-38835c2c60a4))
+    (pin "2" (uuid 67adc87a-24ab-4d0e-82ad-a543d2c228bd))
+    (pin "7" (uuid bed74a87-6745-4552-80e6-585aaa1c10b9))
+    (pin "8" (uuid b558f0cd-5134-4091-a12b-3837eafacbfd))
+    (pin "3" (uuid 93d2bafc-f2de-4e35-8c9b-94853f6a8dc3))
+    (pin "4" (uuid 991e7d65-b50a-4049-9654-aeafbbd37994))
+    (pin "5" (uuid c883be41-2cd5-435a-b1b1-e0f079d93840))
+    (pin "6" (uuid c0f22fd8-37a3-45a2-a87d-e57add20d0a5))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -6738,8 +6706,8 @@
     (property "Datasheet" "~" (at 365.76 171.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a5f717b6-b881-48d8-8439-595f12ea3418))
-    (pin "2" (uuid 9e7887c0-cefa-443f-8c06-9968292c0d34))
+    (pin "1" (uuid 73d01ea8-3360-40aa-a428-3d902db704f6))
+    (pin "2" (uuid fe11029b-8036-4ae0-9647-3261cc01d018))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -6814,8 +6782,8 @@
     (property "Datasheet" "~" (at 233.68 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 100758f9-5ff2-4f3d-a1d9-3710f7963ee4))
-    (pin "2" (uuid f97afba8-8a71-4a0f-ac62-1a86955c4d3c))
+    (pin "1" (uuid b81547b2-ac4e-4557-8c3e-87ce345df4a6))
+    (pin "2" (uuid 3bdadfaf-0134-4258-ae46-97d4fe4639b2))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -6840,10 +6808,10 @@
     (property "Datasheet" "~" (at 44.45 233.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid af5a2400-b55f-4720-ac61-98a1a7c9f515))
-    (pin "2" (uuid c5e7f3a6-085c-4a13-b7f5-9f1c2005a7fa))
-    (pin "3" (uuid 9b7957a3-d908-41e5-81cd-a46147f96b01))
-    (pin "4" (uuid 165244f4-7563-4787-848c-61328e96d447))
+    (pin "1" (uuid 0afe8154-a2f4-4dce-a6f3-fe21260844ae))
+    (pin "2" (uuid 8052f70f-f9e2-4d0c-913c-ed16e5dc3585))
+    (pin "3" (uuid 95f00d9e-69c7-4eaa-b849-bad09e73ad6f))
+    (pin "4" (uuid 8925cd57-ee4d-4da0-9ee0-648cc11cce89))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -6868,8 +6836,8 @@
     (property "Datasheet" "~" (at 271.78 27.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a35b5e86-6362-4b56-9c4a-043e1a2a3b3d))
-    (pin "2" (uuid c5b5a039-82a2-40d0-86cf-3a01096007ce))
+    (pin "1" (uuid cf31af64-d26d-4a5c-b7c1-03533d69d4c4))
+    (pin "2" (uuid ac53f7f1-c8de-4a2a-9417-9cc21fd1346f))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -6919,8 +6887,8 @@
     (property "Datasheet" "~" (at 153.67 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3af082d7-e543-403d-9f24-509a978074f0))
-    (pin "2" (uuid 9ec7312a-49ea-4904-b56b-a2f100e4380c))
+    (pin "1" (uuid 8e1ea37f-3f46-424b-8318-35bac5c8ac42))
+    (pin "2" (uuid 70aa5eb1-34e1-426b-8554-e0745f9921f3))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -6945,8 +6913,8 @@
     (property "Datasheet" "~" (at 207.01 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 73e281ba-4ea4-4251-97d4-b9136367442f))
-    (pin "2" (uuid 3deec8a7-55be-43ed-ac92-bb7917f765f3))
+    (pin "1" (uuid 6154ab3c-5971-4cad-927c-0c34a3d39f88))
+    (pin "2" (uuid ffcfe52d-a486-4f64-96ba-f4d27871fb7f))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -6990,14 +6958,14 @@
     (property "Value" "4700p" (at 180.34 254 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 185.1152 252.73 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 185.1152 252.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 184.15 248.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a8fcca9f-ce5e-4461-8598-645b02ffc4b2))
-    (pin "2" (uuid 9d6929a5-ae8a-4eec-80b8-bb9a7b613018))
+    (pin "1" (uuid d3da953b-7562-4e27-8eff-00b713544031))
+    (pin "2" (uuid 5c890dd8-d13b-4acf-81dc-92076e4f2047))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -7047,12 +7015,12 @@
     (property "Datasheet" "~" (at 168.91 154.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f62e62fe-ae94-4bd1-ac8b-5a8c12df6a2f))
-    (pin "2" (uuid 5fcc83da-7174-4ba3-a6b1-1b379922f856))
-    (pin "3" (uuid ff98635a-46b3-41ef-b4d4-b16453b965b3))
-    (pin "4" (uuid 4d7f849d-3f61-4e5d-a0d9-55a6e1ed65da))
-    (pin "5" (uuid 5e63c4dd-b3fd-48be-a513-a080a64cc111))
-    (pin "6" (uuid 9a5d8266-aa90-46a3-b7bb-9ed46c4087c0))
+    (pin "1" (uuid ec6d42ba-7692-4f86-86ec-9f8452797534))
+    (pin "2" (uuid 2e2d7b8e-53c2-4500-b838-1893d6d4285a))
+    (pin "3" (uuid 1ba66dca-94ac-45e9-b962-c0a8cbeb34b3))
+    (pin "4" (uuid e39abe56-09ff-4d41-9b70-9fb1cd624d98))
+    (pin "5" (uuid 746c4b89-790b-4ebd-919e-d5909c17a6e6))
+    (pin "6" (uuid c18bbc95-db02-4a9d-8219-13aec5470f0c))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -7127,8 +7095,8 @@
     (property "Datasheet" "~" (at 323.85 204.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a7b71383-2337-4a57-a8ad-78be9a8be17e))
-    (pin "2" (uuid 9f670edb-c61a-4ec2-a404-584c42311f2c))
+    (pin "1" (uuid a748d1ae-6512-4e6d-84e2-1fbe7dd87bf9))
+    (pin "2" (uuid f04edec8-9811-4a6c-ae6b-9bba51ba1252))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -7153,9 +7121,9 @@
     (property "Datasheet" "~" (at 354.33 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 94933c86-7645-4dc8-8292-b2767545553c))
-    (pin "2" (uuid b282d2ec-cb1e-4102-9643-f48e385731d0))
-    (pin "3" (uuid 41027987-1bc8-4282-a610-519ec4ae4aab))
+    (pin "1" (uuid 0e20437e-37ef-48a9-a8eb-ee67b0b1f9e5))
+    (pin "2" (uuid f48b3e56-ec73-49dc-8d5e-54e1e94d35ac))
+    (pin "3" (uuid 1fdf0067-d92a-443c-a67b-504b51712ea6))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -7180,9 +7148,9 @@
     (property "Datasheet" "~" (at 354.33 190.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 326f747f-e98a-4a60-a8c7-5a9a26a89e9b))
-    (pin "2" (uuid 0b0bcd15-c377-4006-8efe-d4d8ca7e283e))
-    (pin "3" (uuid ea1e29e9-a893-4131-995f-ade8b0929aa0))
+    (pin "1" (uuid 61015cb0-72da-4ab1-9bd5-743eded07ff7))
+    (pin "2" (uuid 9e269611-0d93-4d3c-9b72-92ec32e218d6))
+    (pin "3" (uuid 80b9dbfc-4ae4-459e-b504-8de9c2c38108))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -7207,8 +7175,8 @@
     (property "Datasheet" "~" (at 227.33 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9d389fbd-6ca2-4036-8963-fb992db2c319))
-    (pin "2" (uuid 929582e2-5cda-4516-8060-a9b5a9a2a361))
+    (pin "1" (uuid 43fbb093-66ed-46cd-9245-d56a6599d263))
+    (pin "2" (uuid 16471ef4-c271-413e-839c-cd300349f631))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -7252,14 +7220,14 @@
     (property "Value" "C" (at 181.61 34.29 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 178.7652 36.83 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 178.7652 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 177.8 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid cc2d27fa-aad4-47fd-9ca9-0f182c1bb8a1))
-    (pin "2" (uuid 0511c20b-1d0d-4164-8d76-5ac64466a79b))
+    (pin "1" (uuid 11f34af1-e81f-4c6b-a807-517124cadc69))
+    (pin "2" (uuid 59153593-c443-4b68-b34c-2a8716ba1865))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -7303,14 +7271,14 @@
     (property "Value" "CUHS20S30" (at 128.27 228.6 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Diode_SMD:D_MELF" (at 123.19 226.695 0)
+    (property "Footprint" "LibraryLoader:CUHS20S40H3F" (at 123.19 226.695 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.microsemi.com/document-portal/doc_download/131890-lds-0040-1-datasheet" (at 123.19 231.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid fffcd4f8-6fd4-4302-ad37-5951eb9c614b))
-    (pin "2" (uuid 03babb2e-46f3-47ba-b2a5-fd86f7d3b4de))
+    (pin "1" (uuid 70bac8a8-94be-48d9-811b-4bff8c7eafa1))
+    (pin "2" (uuid 85ed65b5-b215-4a1c-93a5-6e45f62586eb))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -7335,9 +7303,9 @@
     (property "Datasheet" "~" (at 354.33 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1af394a9-f8ea-43c5-bf15-e271f3b429b7))
-    (pin "2" (uuid ae741c91-0133-4def-a200-967ac71f50f1))
-    (pin "3" (uuid 187719af-76d9-4a32-8489-8b43cda99557))
+    (pin "1" (uuid 37e4c43a-e817-44c2-8c84-2aa14526ec6a))
+    (pin "2" (uuid df16649a-56c1-445f-acfd-a9756f384f9f))
+    (pin "3" (uuid 4645d0b8-1050-4396-bfbe-553685df83d9))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -7362,8 +7330,8 @@
     (property "Datasheet" "~" (at 323.85 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c57f7b8b-7cf7-463e-8d51-3f1af2393cce))
-    (pin "2" (uuid 87db7807-6a74-4762-9ba1-ecc9ff366f2f))
+    (pin "1" (uuid 69c28934-b88b-4aa4-b047-526dd2241e7d))
+    (pin "2" (uuid 5c2fb731-ff39-438a-b26e-291c7fa31d48))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -7432,14 +7400,14 @@
     (property "Value" "C" (at 140.97 147.32 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 134.9248 149.86 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 134.9248 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 135.89 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d3e1120a-78f4-4989-a5ab-9f40f4b2314e))
-    (pin "2" (uuid c89300ee-1724-46f4-ba19-2d8081c6ab5a))
+    (pin "1" (uuid 905fcae4-7108-448a-a507-9b47f7740e6b))
+    (pin "2" (uuid aa6448e7-09cd-46e1-8e2d-25eebd1c4161))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -7514,10 +7482,10 @@
     (property "Datasheet" "~" (at 151.13 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a23cfa95-cca5-44df-a1bc-955f74d7f86b))
-    (pin "2" (uuid 581aa779-b4e0-46d9-b02c-11a9b5c38f91))
-    (pin "3" (uuid 0386f33c-560b-4d12-bdb3-0d7f1419fbf3))
-    (pin "4" (uuid e8a6a89d-e892-461b-b430-02e044bc9ff5))
+    (pin "1" (uuid e60be551-feee-481f-bc09-07ea0cae9c71))
+    (pin "2" (uuid 66e01556-3b04-4a2a-aca5-a7907bc6a38a))
+    (pin "3" (uuid 477adfff-7d69-476a-822d-144bb9ebf13b))
+    (pin "4" (uuid 6a8b3708-8bfe-4c92-9dda-3d852c12a689))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -7567,8 +7535,8 @@
     (property "Datasheet" "~" (at 240.03 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8041a815-1361-4f84-b1bb-24c3631cc263))
-    (pin "2" (uuid dd215cd5-6499-4b68-80d0-25a7e07c3fcb))
+    (pin "1" (uuid 2f975b11-08cf-48d5-a07a-61413e75754f))
+    (pin "2" (uuid d0ddf67d-146d-4164-ba8f-1da5896b786a))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -7643,8 +7611,8 @@
     (property "Datasheet" "~" (at 160.02 236.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 282a5267-6068-449c-8260-3564337fadb8))
-    (pin "2" (uuid da19d41f-7fd4-477e-bbf4-76c4828c77b8))
+    (pin "1" (uuid 33807978-b60a-4974-9c32-c08098880db3))
+    (pin "2" (uuid 8a3695a0-ceeb-4740-84da-76df59565def))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -7663,14 +7631,14 @@
     (property "Value" "C" (at 110.49 55.88 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 107.6452 58.42 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 107.6452 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 106.68 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid cabb3b3e-2807-4eed-a54e-1cf6b835d049))
-    (pin "2" (uuid 7692d002-8066-4c2a-9904-dde547437716))
+    (pin "1" (uuid 3ffad97d-0b7e-475d-97a9-02b6402da5d5))
+    (pin "2" (uuid 8ec79263-5b82-4c62-b7cc-5c8ca432cb89))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -7819,19 +7787,19 @@
     (property "Arrow Price/Stock" "" (at 156.21 73.66 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (pin "1" (uuid 05b9c5c7-08d4-4946-9c71-e7cfc0493d71))
-    (pin "10" (uuid 1da686cd-29e3-403f-8203-5f1859c438db))
-    (pin "11" (uuid 59c25eb8-d1e1-49c7-9f25-98be677b846d))
-    (pin "12" (uuid f2856c73-f108-4d18-8eb2-b7fa9cedf55b))
-    (pin "13" (uuid 4a34b835-72ed-4d50-9c3b-5252b1b4c0d4))
-    (pin "2" (uuid 497d0f4c-1308-437b-954c-8edbd58d30c3))
-    (pin "3" (uuid 86f66fa5-cb95-43c8-9f59-fccef2aa8a31))
-    (pin "4" (uuid e9cc7b48-0e89-44fa-82bc-20d26753b469))
-    (pin "5" (uuid 9953694b-7282-4229-b391-97b69e7c328f))
-    (pin "6" (uuid 3c4cbb29-8ed0-4672-99fc-2b99bcf4147b))
-    (pin "7" (uuid beb21246-536c-41f4-9b64-bc5d9cdc1b21))
-    (pin "8" (uuid ef7ab6d7-54f8-4a31-bf44-6872cf2b1a82))
-    (pin "9" (uuid 367bd853-514b-4bf3-b7d3-fe49e442831c))
+    (pin "1" (uuid 9b34c432-be13-4f57-b1a0-4414a62a5d42))
+    (pin "10" (uuid fd2d8184-e6fc-4b53-a431-e1e30d64784e))
+    (pin "11" (uuid c8881b95-921e-4d66-9e32-40252190908c))
+    (pin "12" (uuid 9746f475-b900-4a8d-8021-6feaa17194eb))
+    (pin "13" (uuid a08bc61a-e990-41be-9540-a11d38ef2c5a))
+    (pin "2" (uuid 86b1f12b-5473-41b8-b6df-73a8cd1b25b0))
+    (pin "3" (uuid 13e86b72-8167-47fc-9a01-c7a8050a4b42))
+    (pin "4" (uuid 275509f7-e4aa-48d1-99ef-0d13cb7c5359))
+    (pin "5" (uuid 4e2a737d-eda7-4cd3-a0a2-cb4534ec1ab2))
+    (pin "6" (uuid 847b3d29-cbe1-4b97-ac5d-2239e9d7a061))
+    (pin "7" (uuid 24c95105-1290-4ae1-8d9e-c2f3a4b6eb8a))
+    (pin "8" (uuid 86246573-3fa4-45ac-83a1-84fe2d4fd5e0))
+    (pin "9" (uuid 76b42ec1-ac54-43a8-839c-d78bc00092c8))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -7881,10 +7849,10 @@
     (property "Datasheet" "~" (at 219.71 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid efd5709d-de4d-428e-bcb4-57a8e0f77103))
-    (pin "2" (uuid dac59dc6-585f-4867-987f-5404d4326b4e))
-    (pin "3" (uuid 36ff95b9-ff88-4cbb-8fa3-742b9677cb85))
-    (pin "4" (uuid f8e3b82c-c62a-43ab-a20c-16bad0c341f6))
+    (pin "1" (uuid 8ef5a380-5bff-4427-80a2-3796017505ec))
+    (pin "2" (uuid 9223bd48-6f40-4f6f-91bb-3246c500ceb4))
+    (pin "3" (uuid 67641973-d6a6-4193-bab0-d85461072ca1))
+    (pin "4" (uuid 83df7f73-a6b6-4ffa-92dd-3f7c0ec071cb))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -7909,8 +7877,8 @@
     (property "Datasheet" "~" (at 283.21 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid dd07ee45-816f-4350-a518-82992ea36b9e))
-    (pin "2" (uuid 1832258c-0fd4-4e4f-aea8-5f8747ae4675))
+    (pin "1" (uuid d278e2a2-108a-47dd-9b83-779f35b054d7))
+    (pin "2" (uuid 365e1b04-0f0b-4007-b10e-7bafbb28613e))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -7935,8 +7903,8 @@
     (property "Datasheet" "~" (at 99.06 255.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a3668d7a-2733-4b69-9038-dea8e968333e))
-    (pin "2" (uuid 2716a1ee-d6eb-4163-9c01-788db42aaaff))
+    (pin "1" (uuid 5cb916f2-2d6e-4b48-8cda-4a4fe8625189))
+    (pin "2" (uuid ed7ace94-92fb-422b-a495-b165837142f2))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -7955,14 +7923,14 @@
     (property "Value" "C" (at 45.72 55.88 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 48.5648 58.42 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 48.5648 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 49.53 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e50b6a54-0939-4a1d-8c87-f6044e486c27))
-    (pin "2" (uuid 74d271b6-5f15-454f-bf41-c2cbf0216828))
+    (pin "1" (uuid cfab47e0-fff9-44d7-a422-3378199a87ad))
+    (pin "2" (uuid be37a33f-fd14-4c1b-ad5c-d56c6f92fa44))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8006,14 +7974,14 @@
     (property "Value" "0.022u" (at 198.12 240.03 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 201.93 242.8748 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 201.93 242.8748 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 198.12 243.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c248919d-e3af-4605-8c77-2872fe9b9296))
-    (pin "2" (uuid a4899d42-daa0-4430-90be-af950da4c174))
+    (pin "1" (uuid c9439393-1baf-4401-b15b-36d9a700bd37))
+    (pin "2" (uuid da74e539-f321-4b8c-8e32-2d0a0dcb6c96))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8082,14 +8050,14 @@
     (property "Value" "C" (at 25.4 116.84 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 20.6248 119.38 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 20.6248 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 21.59 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3848fdc0-2354-4c34-8b5c-0599fa1eec2b))
-    (pin "2" (uuid 27bbccae-840f-4d2a-8121-435c0448a29c))
+    (pin "1" (uuid 6ffd72ef-c3d2-4d41-9eae-6c5d8b5666d9))
+    (pin "2" (uuid e0436fec-6832-4395-9069-0c538f77f06b))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8114,14 +8082,14 @@
     (property "Datasheet" "~" (at 341.63 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e95e1aac-aff8-400e-b795-5f2e4ee0e667))
-    (pin "2" (uuid 8b8423b1-b577-4b9e-bc36-96c4e05d8572))
-    (pin "7" (uuid 3ccf4025-05d8-460d-8c51-ecedacc2bccc))
-    (pin "8" (uuid cb5bd3f7-861e-4d9b-82cb-edc243b138b3))
-    (pin "3" (uuid 04f7e9d7-53bb-4188-ae26-486ac7f00c25))
-    (pin "4" (uuid d8f79dd3-d30d-436b-aa4e-38949303b011))
-    (pin "5" (uuid 251f2f5a-29d7-4c49-b9c9-80b7ffd59661))
-    (pin "6" (uuid 39a431a2-a6d5-4678-9a3f-14e97f4ef8b3))
+    (pin "1" (uuid ca30803f-0a78-407e-8df8-0395dfe13143))
+    (pin "2" (uuid 21698186-1942-40eb-9ac0-e57257a88af0))
+    (pin "7" (uuid 4f0c8735-9866-48ff-bc66-83fb2a9ffe17))
+    (pin "8" (uuid 31853273-caa6-4577-a44e-91be6b560af9))
+    (pin "3" (uuid 48aa56e1-f344-49c4-a6fe-427f2025c07d))
+    (pin "4" (uuid 09468a9e-57ba-4eed-9b7e-ba8906ecee16))
+    (pin "5" (uuid a25130c1-a8ca-4cb3-aa59-788ce0b1171c))
+    (pin "6" (uuid 8309d935-692a-48e4-81f3-f4255f036b17))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8140,14 +8108,14 @@
     (property "Value" "470n" (at 290.83 30.48 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 286.0548 25.4 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 286.0548 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 287.02 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d6c00d4f-a729-49d5-8dd0-28bf56841cfb))
-    (pin "2" (uuid 7f502f1b-5d0c-49c6-989c-2e2192f25065))
+    (pin "1" (uuid f01078f8-8d52-4955-9669-1f005caa0f34))
+    (pin "2" (uuid d2c2a522-2745-4c28-851a-ebc04f2dc053))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8222,10 +8190,10 @@
     (property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" (at 33.02 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 076c1c90-7388-434d-aa31-1fc0f54704d7))
-    (pin "2" (uuid 6bd1c5be-c994-4890-99ac-52f2805bce04))
-    (pin "3" (uuid 061bed50-cd4a-49ba-bd02-11875da6a942))
-    (pin "4" (uuid 427ab92b-02a7-4ad4-8e70-f845d1283d26))
+    (pin "1" (uuid 6a6461cf-0203-4206-9871-37077d11257b))
+    (pin "2" (uuid 55514c8a-bd64-472f-addc-5920b78d7449))
+    (pin "3" (uuid 3181356c-ad3b-4e49-81b7-dfe1b8469ffa))
+    (pin "4" (uuid 0e9d712f-705b-4570-9533-325fe9179bfa))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8324,35 +8292,35 @@
     (property "Arrow Price/Stock" "https://www.arrow.com/en/products/a3921klptr-t/allegro-microsystems?region=nac" (at 314.96 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (pin "1" (uuid d8f154d5-9100-4ac3-a10f-709fe8ea48b9))
-    (pin "10" (uuid d31e161d-1b06-4feb-90af-de94828c099b))
-    (pin "11" (uuid 508963fd-c2ed-4cb7-8933-161f930f99aa))
-    (pin "12" (uuid c314f506-f449-47d4-9a0a-3fc67333eb62))
-    (pin "13" (uuid 7bae6d72-9e17-4640-a961-fee0304a29f6))
-    (pin "14" (uuid 4b4b2a59-f11a-4b2a-9406-d4af6aba3518))
-    (pin "15" (uuid e7fbfdda-254f-4923-8ae4-5c803927894c))
-    (pin "16" (uuid 433a0e07-e233-48ce-ad6c-d4c9626a3295))
-    (pin "17" (uuid fad476b4-74f1-4e6e-9dd1-368e24f0a9eb))
-    (pin "18" (uuid 1740d8fd-2d08-43e2-a63d-9148e5c4d72b))
-    (pin "19" (uuid 4cb1ccee-e7ca-4cd9-affb-f441cd5d558e))
-    (pin "2" (uuid 3cb78c86-b774-4ab1-a62a-539979f1c934))
-    (pin "20" (uuid 61cb4e33-e1cd-47cf-802f-c88ad22201ae))
-    (pin "21" (uuid f0a1d6a9-d6b6-473c-8881-ebfb3f996d48))
-    (pin "22" (uuid aea4e71a-2206-4836-a25c-f97904f9cbb7))
-    (pin "23" (uuid a3033cee-8fce-4598-81da-9af69839c0c4))
-    (pin "24" (uuid 2f93a575-d466-4ec6-9e4f-83f163c80c5b))
-    (pin "25" (uuid 1b99cab7-fcae-4b70-9bf8-63903330e858))
-    (pin "26" (uuid 29f323eb-2547-4c33-883a-e2419c227ee0))
-    (pin "27" (uuid acf99e44-4c63-490c-9878-52d2fea93616))
-    (pin "28" (uuid ff87f971-e268-4710-b132-4fa976993f9f))
-    (pin "29" (uuid 8e1267ac-948d-453a-a6f9-9ea9831d6aa9))
-    (pin "3" (uuid 5357e8e4-e227-42f6-91e2-e9b30f0a7d05))
-    (pin "4" (uuid 2a5100bc-be60-4383-8e15-8713e9887620))
-    (pin "5" (uuid 933c033d-439f-4f66-82f3-d045dfed7bca))
-    (pin "6" (uuid 3d529c85-dea4-489a-8809-f43c0c000aa4))
-    (pin "7" (uuid 080df332-e4f8-4064-ad90-f769d4c5a013))
-    (pin "8" (uuid 1b993ed4-65c3-42c1-9a81-e9042912fae1))
-    (pin "9" (uuid 8be764b2-ca57-4432-818d-a031b0b2764b))
+    (pin "1" (uuid 33839cab-08db-42e0-acf3-56386c65085b))
+    (pin "10" (uuid 1a053f6d-914c-4083-9fbf-932fb376888a))
+    (pin "11" (uuid eaf01125-67e7-49e4-8ff5-5a69d0c6129c))
+    (pin "12" (uuid b20dc521-ac54-4d94-b031-e0332efe4d16))
+    (pin "13" (uuid 31b306d6-4712-46dd-9237-9f8bb57bd5c2))
+    (pin "14" (uuid b812b1b6-c933-4b68-ad69-ec7c9a92738a))
+    (pin "15" (uuid 9dd6fc84-158b-487f-afa5-1d7dfe697c42))
+    (pin "16" (uuid 39280a4d-1d7b-4788-9b0c-f4b10e15b49f))
+    (pin "17" (uuid 4689b2b3-0a40-46f1-8e35-72200fce1b90))
+    (pin "18" (uuid e7e9764f-c5c7-429b-9ce1-d11a715cb3fb))
+    (pin "19" (uuid 29eab5ec-b2aa-4d09-ab57-aecef4dea2e7))
+    (pin "2" (uuid edca9004-49f1-43b5-a0e2-c8931e33a1ee))
+    (pin "20" (uuid 55520b81-516a-4e84-b282-f76bdf76dc4a))
+    (pin "21" (uuid 79d308cd-52e2-4bb3-923b-2d003faf2d16))
+    (pin "22" (uuid 6a748f97-3cf2-446e-8813-eb5633a00537))
+    (pin "23" (uuid 26590d10-1c22-438e-b18d-ccb7a92cc0dd))
+    (pin "24" (uuid 74e924ce-512e-405c-a363-574bf697f93b))
+    (pin "25" (uuid 9d9955d0-b19d-4ddd-9b09-96ff04e306ef))
+    (pin "26" (uuid 4605c24e-74d6-4da4-9496-8ce5a4279c6f))
+    (pin "27" (uuid 18071be3-46ab-45ce-bf64-d1cfd2af4a67))
+    (pin "28" (uuid 1c6d70f6-2fab-405c-ae91-fd3b26bc823d))
+    (pin "29" (uuid 73a0873e-8261-45b1-a154-67ec645ce409))
+    (pin "3" (uuid df703458-f04f-4017-8835-1da7aae2064c))
+    (pin "4" (uuid f04b27bd-fdf0-4138-b4a7-0de1d4095206))
+    (pin "5" (uuid e490059e-f601-4336-b229-6f81a2d6d9f8))
+    (pin "6" (uuid a147935e-a985-437f-9e31-5e13de7b8ff2))
+    (pin "7" (uuid b8719dbb-be38-409b-bee4-dd257a0282ba))
+    (pin "8" (uuid a48c5c09-b544-4b69-a679-54148f5ba491))
+    (pin "9" (uuid f6cb87d7-88d3-4d2a-a027-52d6eda64be3))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8402,8 +8370,8 @@
     (property "Datasheet" "~" (at 198.12 248.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 203d5da0-f3e6-4aef-9f56-631ddb926942))
-    (pin "2" (uuid 5f3aac79-c0f4-4359-9047-abc49643a04a))
+    (pin "1" (uuid 4c6b43f8-b2c8-4b03-aca3-0cae69df0c2a))
+    (pin "2" (uuid ab511231-f205-44e9-bcec-38befad90681))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8472,14 +8440,14 @@
     (property "Value" "C" (at 231.14 110.49 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 228.2952 113.03 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 228.2952 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 227.33 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 313b25cc-5000-4eeb-9b6a-dbef4d261c84))
-    (pin "2" (uuid 39113f56-51f0-4947-b8d6-1f75e4801525))
+    (pin "1" (uuid 86f972a1-83b1-4de8-a402-cd45798a4da1))
+    (pin "2" (uuid 6945594e-6e82-4785-8491-095e5d30f95c))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8498,14 +8466,14 @@
     (property "Value" "C" (at 318.77 30.48 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 314.96 36.5252 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 314.96 36.5252 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 318.77 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0182eabe-4844-496e-aa23-e09b1e06d55e))
-    (pin "2" (uuid ae72fa00-d9f3-42c3-9194-5403eb182c4c))
+    (pin "1" (uuid 71233d5c-70e0-4f1e-8180-c9396a32d1c3))
+    (pin "2" (uuid aa1cb9cb-757c-4fa2-956b-6dc634b01894))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8530,9 +8498,9 @@
     (property "Datasheet" "~" (at 41.91 254 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 186c8078-5043-4d7b-96cd-508476bef06b))
-    (pin "2" (uuid bbc53b09-f2fb-4309-bffb-1a30b31407cf))
-    (pin "3" (uuid 0a9dc13e-b7ed-411e-9031-09d5cef9a5fa))
+    (pin "1" (uuid 98cc6f06-c87d-4ab4-98ba-f10def3800b3))
+    (pin "2" (uuid 2f995a18-c2c0-4be0-a027-3e0350b1ce9f))
+    (pin "3" (uuid 8a529863-bb9a-4007-a3b5-bc25b5afc862))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8557,10 +8525,10 @@
     (property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" (at 26.67 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0469d5ed-beef-483b-af34-8c3100ea4e4c))
-    (pin "2" (uuid 9770ee5b-7222-457f-83b1-d61d5702661a))
-    (pin "3" (uuid f21a2424-8e0a-4cce-9871-41870fa20286))
-    (pin "4" (uuid 4dc61f77-6651-4dcd-9409-e72695f7a57b))
+    (pin "1" (uuid 6279dfc1-0749-443c-9a69-7de486fd8c2b))
+    (pin "2" (uuid f7d6e3a8-8a7a-4e44-97d7-51ff8aa9af7b))
+    (pin "3" (uuid 32ac581d-6f60-4df3-a238-92d55f3b43a8))
+    (pin "4" (uuid 5fff862c-4979-48f1-a074-ac8e49f006e1))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8610,8 +8578,8 @@
     (property "Datasheet" "~" (at 57.15 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid fae434ae-3dce-4438-94e6-f964a8e249a9))
-    (pin "2" (uuid ae6fb254-3023-4cce-9e68-952acc2047ff))
+    (pin "1" (uuid b01a6e96-2d07-415f-b010-01d65a112892))
+    (pin "2" (uuid 5ef00148-e82a-4a23-b896-2a9aa7d851a1))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8655,14 +8623,14 @@
     (property "Value" "XT30" (at 21.59 238.76 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 27.94 233.68 0)
+    (property "Footprint" "LibraryLoader:XT30PWF" (at 27.94 233.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 27.94 233.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid fe9dc560-bc3e-4182-bd95-e13aa75d3d79))
-    (pin "2" (uuid 77ba8fd8-7a69-48ab-b4b6-f26ef21ae01f))
+    (pin "1" (uuid 4720af4c-5ca5-4bb1-b8e4-e4c0e98c87a9))
+    (pin "2" (uuid c8b03cb4-eeba-4ef3-8d5d-1e1153d2521f))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8681,14 +8649,14 @@
     (property "Value" "C" (at 182.88 157.48 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 188.9252 160.02 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 188.9252 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 187.96 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6d2e63c0-224f-4117-87a0-80733d967b12))
-    (pin "2" (uuid 39199750-ae69-41dc-8b25-2cf194ac94a0))
+    (pin "1" (uuid 9ecf59c5-0f18-4b5f-8922-516e145232d8))
+    (pin "2" (uuid f698e26b-8b02-4e56-b47e-bab18a9518fe))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8707,14 +8675,14 @@
     (property "Value" "C" (at 318.77 139.7 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 314.96 145.7452 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 314.96 145.7452 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 318.77 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 08ac6dde-7713-4625-86d2-79d18b85fdb6))
-    (pin "2" (uuid b4fe6b37-89d8-44f0-8730-1bc36e071661))
+    (pin "1" (uuid f2c27ff8-3572-4af6-89f1-bf2d56cb927b))
+    (pin "2" (uuid a25e5a97-05d4-4cd5-8589-361ee3a7f1ce))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8733,14 +8701,14 @@
     (property "Value" "C" (at 50.8 81.28 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 54.61 85.3948 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 54.61 85.3948 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 50.8 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8ea98cc9-999b-4178-bf0c-e63c52fcb620))
-    (pin "2" (uuid 3730992d-20cd-48e1-9e3f-c19f8fb4b452))
+    (pin "1" (uuid bd464f96-f74c-41cb-bf94-a7642d13a4a6))
+    (pin "2" (uuid 39a19f6d-5db1-45c4-b9be-5f06636fd237))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8759,14 +8727,14 @@
     (property "Value" "C" (at 120.65 55.88 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 117.8052 58.42 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 117.8052 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 116.84 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ee2b71a1-a251-4568-8cba-04382c50d820))
-    (pin "2" (uuid 67a1075c-5b52-4f8a-ac30-9427b590a106))
+    (pin "1" (uuid 70dfabc2-4f09-427e-9778-0881736f5cc0))
+    (pin "2" (uuid f146c09a-cd87-4aa8-8eb3-b90fe92ac3f0))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8785,14 +8753,14 @@
     (property "Value" "0.022u" (at 107.95 240.03 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 111.76 242.8748 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 111.76 242.8748 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 107.95 243.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid fee97cd9-753b-46dd-a606-9b1816ffbed6))
-    (pin "2" (uuid 601a06f2-a32c-415e-b3e2-094437064e1c))
+    (pin "1" (uuid 8c2755ee-88bd-4096-b268-4c56272c5c8f))
+    (pin "2" (uuid fc733c72-62af-4c94-a49c-9fea83906029))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8811,14 +8779,14 @@
     (property "Value" "C" (at 208.28 137.16 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 203.5048 139.7 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 203.5048 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 204.47 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0cf71c6c-c463-4b19-a002-9fa5874afa23))
-    (pin "2" (uuid 3f3ac428-93ff-4004-a7ab-ebe9961cfb77))
+    (pin "1" (uuid 3526d206-d8ff-4acd-9493-e1fb93df1f6f))
+    (pin "2" (uuid e7618eb2-aa0c-4c10-bbd4-abe59d69b951))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8837,14 +8805,14 @@
     (property "Value" "ECASD60J337M009KA0" (at 120.65 256.54 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 117.8052 259.08 0)
+    (property "Footprint" "LibraryLoader:CAPPM7343X310N" (at 117.8052 259.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 116.84 255.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0a078116-acac-4119-8765-a5145c4ca7bd))
-    (pin "2" (uuid e4b3e594-2e4e-4501-8ba7-acf78ff29427))
+    (pin "1" (uuid 44b7e6d4-aae3-499b-8a9c-f7cfbad62f7a))
+    (pin "2" (uuid 84cddeba-512e-46ff-aee4-16dbc547dc64))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8869,10 +8837,10 @@
     (property "Datasheet" "~" (at 82.55 190.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0e2013cd-bb51-4c99-8796-46e1dfd7db48))
-    (pin "2" (uuid 78836b30-2735-4fc9-8987-333f28300a6b))
-    (pin "3" (uuid c5df0a70-8f01-484f-8436-def0c2fb69ac))
-    (pin "4" (uuid 5397995b-1849-416b-8a86-ed20f73a91b2))
+    (pin "1" (uuid a3a682d2-bcb1-4596-9174-11917f4e84c8))
+    (pin "2" (uuid f62e38ae-c6e2-4b84-8ee2-a23e9a5f4171))
+    (pin "3" (uuid 0ab1304b-b9e4-4b30-8254-deb9a44c2bd2))
+    (pin "4" (uuid ebf676f6-66b5-4300-9d78-d089e9130a1d))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8897,14 +8865,14 @@
     (property "Datasheet" "~" (at 341.63 191.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b6e30dce-8f44-4a47-b6e8-6e40ac830301))
-    (pin "2" (uuid 92a0b9f6-0955-4656-8c1f-68b268b68e6e))
-    (pin "7" (uuid c17ce917-c521-4724-9ffa-856394429d42))
-    (pin "8" (uuid a93d87ad-0315-4a39-b6e0-85efdd807cc4))
-    (pin "3" (uuid 8775a30c-dcc5-44ab-a260-a70aa927ef73))
-    (pin "4" (uuid 4fd50e64-ed51-4e3a-a771-c83f8b07388a))
-    (pin "5" (uuid 95fb9005-646f-45fe-922a-7bb760a539b0))
-    (pin "6" (uuid 2afdbc67-fe65-476e-83ca-e84de4a1c35d))
+    (pin "1" (uuid 4f075a28-2c56-467f-9bc0-25471f8cf378))
+    (pin "2" (uuid b1629a68-4b05-4744-baa7-260b2c556043))
+    (pin "7" (uuid b31050bd-be20-429c-8660-bbafd7777818))
+    (pin "8" (uuid 08e2a03b-d70a-45dd-b841-18f49b2ed57e))
+    (pin "3" (uuid 51f0a2e8-5e86-4c0d-93fd-c8606a201aa1))
+    (pin "4" (uuid 20114cba-e3f4-470f-8599-3e64130c7bda))
+    (pin "5" (uuid 4f461551-cd7f-4bd4-8a51-f0b7427922c8))
+    (pin "6" (uuid 7525b332-ddd3-48da-a72c-b1d55de17a32))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8929,8 +8897,8 @@
     (property "Datasheet" "~" (at 283.21 207.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid cbf72775-a73a-40ff-9474-5a19cdac7815))
-    (pin "2" (uuid e69ac50e-550a-4a03-8393-c18b0a5d3160))
+    (pin "1" (uuid 7f2cdeab-8402-4a80-97a1-4960dbcd5ecf))
+    (pin "2" (uuid c21bc10f-20e5-4bcd-9bdb-c27e2c2a28bc))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8955,14 +8923,14 @@
     (property "Datasheet" "~" (at 341.63 204.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f3dfd213-aa54-4752-a2b4-e923e1364b9e))
-    (pin "2" (uuid ef27ce3a-aabe-47a1-a507-51a68193c010))
-    (pin "7" (uuid cb4e95cd-27a4-447a-b036-d2ae14b76874))
-    (pin "8" (uuid 8d1bd17a-2a09-48e9-9ad8-1288b00c0472))
-    (pin "3" (uuid ac0337f2-9a1a-4b98-89f8-b31804f0a579))
-    (pin "4" (uuid b8482a76-9a4a-4d0c-a2fc-e00cd0366809))
-    (pin "5" (uuid a8618918-3418-424c-9c3d-7f423cedbda9))
-    (pin "6" (uuid d4d92b14-e8ce-4fab-a16a-f7fe3b6cf585))
+    (pin "1" (uuid 91287bf8-ac88-415b-9c28-56301ad32048))
+    (pin "2" (uuid cc046bc4-9fbc-4d58-a772-a161a84b542e))
+    (pin "7" (uuid 3682d593-733c-4b14-ae84-9ec18a77744d))
+    (pin "8" (uuid a816e90c-85f7-4c5f-a43d-35cef3306f1d))
+    (pin "3" (uuid 5621452b-6408-4559-aa96-1b1b0c1d6765))
+    (pin "4" (uuid 50776e2b-6128-4656-b4af-d2e90368cac1))
+    (pin "5" (uuid 6c6751f4-a7d3-4ba6-b66e-12ca811e16ce))
+    (pin "6" (uuid 5bd79466-1201-469a-8e70-b7a6094e3efd))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -8987,8 +8955,8 @@
     (property "Datasheet" "~" (at 233.68 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 846386d7-08d3-4fb7-b014-53ed33e08090))
-    (pin "2" (uuid a7a1424a-3065-48e5-9761-7c58e1ed1c53))
+    (pin "1" (uuid a4254459-725c-4aec-9d57-9448f46859a9))
+    (pin "2" (uuid 7aae160c-e84a-4ab1-b1bc-d83ad6196f2d))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9013,8 +8981,8 @@
     (property "Datasheet" "~" (at 27.94 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4d5aebeb-9395-4e13-bfe0-ca8b57f7a91a))
-    (pin "2" (uuid 7776e015-6236-4efe-8d43-ed02f9704699))
+    (pin "1" (uuid 0b4cc1d2-2e28-4a23-b718-e420857ff6e3))
+    (pin "2" (uuid a31ad209-0cc0-4b9b-9ca7-f34dd6ca8b59))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9064,8 +9032,8 @@
     (property "Datasheet" "~" (at 323.85 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d1a3dc7b-996f-4545-b1a9-d8ce3d3e56a0))
-    (pin "2" (uuid b003c58c-6816-484f-bae5-0e3522b8ecf4))
+    (pin "1" (uuid 3a0d236a-4074-4225-8c8c-611037f58d82))
+    (pin "2" (uuid ed4eda94-f40b-4f95-880e-bdb446451ea2))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9084,14 +9052,14 @@
     (property "Value" "LED" (at 222.25 256.8575 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 218.44 254 0)
+    (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 218.44 254 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 218.44 254 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 76662c97-98ef-49b6-8248-db9986c424e2))
-    (pin "2" (uuid 0f5d9e5f-4f28-4c77-81e2-d388aa9a7ee8))
+    (pin "1" (uuid af9df5c6-36a1-4ab5-bd0b-f24b54ff2f79))
+    (pin "2" (uuid df279ee2-53fc-4cc9-b9b8-aaaea6a2c063))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9166,8 +9134,8 @@
     (property "Datasheet" "~" (at 21.59 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 67149a46-4655-448d-8d49-3bba94b3dadb))
-    (pin "2" (uuid 141be6ec-9b64-45bb-b8be-fbd38e3045cb))
+    (pin "1" (uuid af1cf07c-664e-47c2-9b6a-d4179b7b5398))
+    (pin "2" (uuid ecb2b876-63be-443f-908b-73e7f244937d))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9186,14 +9154,14 @@
     (property "Value" "100n" (at 224.79 44.45 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 221.9452 46.99 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 221.9452 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 220.98 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 749e0e35-b9c7-471f-98d2-9020113ddf83))
-    (pin "2" (uuid c5f7e765-a6b2-4247-a670-449f4d08f542))
+    (pin "1" (uuid 0440bba0-da09-4c38-b509-0433ceb14b29))
+    (pin "2" (uuid c4332fce-a18d-4e56-a3ea-d87e9db880e8))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9243,8 +9211,8 @@
     (property "Datasheet" "~" (at 57.15 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5482225b-40d6-4956-8e2f-31a63a1884e2))
-    (pin "2" (uuid c6559aaa-c0e9-48c7-af24-9b4b3c3c8806))
+    (pin "1" (uuid 775337e8-8f89-43da-b13e-9da3ab3b1c9e))
+    (pin "2" (uuid 94d638f8-6b58-4f87-b319-3236f2dea245))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9263,14 +9231,14 @@
     (property "Value" "10u" (at 146.05 250.19 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 151.4348 252.73 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 151.4348 252.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 152.4 248.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ff8195e2-7d79-43ce-bdb5-420c5fe22d2d))
-    (pin "2" (uuid fd61d666-04f3-4404-a440-2349957431cc))
+    (pin "1" (uuid e59c3124-f8de-45e8-a014-d45ade487259))
+    (pin "2" (uuid 8ed0c69d-b467-4d19-849f-ac3ed2c6b278))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9289,14 +9257,14 @@
     (property "Value" "4700p" (at 90.17 254 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 94.9452 252.73 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 94.9452 252.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 93.98 248.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d244d715-1a59-4a38-b32a-5625ef344e15))
-    (pin "2" (uuid efc4a587-146f-4f24-b1b0-2f07d9ba79dd))
+    (pin "1" (uuid fc6281b5-9c87-40ef-ba60-76d759b3035d))
+    (pin "2" (uuid fb7ad470-9f1c-4b7f-a35b-ba8951402e3f))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9321,8 +9289,8 @@
     (property "Datasheet" "~" (at 240.03 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0e2e9552-427e-48d3-ba29-23cadefdd9f9))
-    (pin "2" (uuid bf1b0c68-6c45-4895-8d1a-d862da5a40b2))
+    (pin "1" (uuid 39e2b311-3e6d-461f-8f79-49ef6aa7dda5))
+    (pin "2" (uuid 3428a6a2-2b89-4383-b1f8-72e020f4d27f))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9391,14 +9359,14 @@
     (property "Value" "C" (at 167.64 119.38 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 162.8648 121.92 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 162.8648 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 163.83 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c46fb14c-edb5-4a48-b3b2-dd712304473b))
-    (pin "2" (uuid ef1a39b5-2b7a-4316-920a-e193a65f7ee0))
+    (pin "1" (uuid e6684d45-e65c-4c00-a023-81b7d492cfd2))
+    (pin "2" (uuid 5ba51c81-e331-49d4-9007-c0a00ae6d211))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9448,8 +9416,8 @@
     (property "Datasheet" "~" (at 189.23 255.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5899cea1-35c2-4538-98de-fb91812a6534))
-    (pin "2" (uuid a7a4a32f-3343-4497-b2cf-62cb065d3974))
+    (pin "1" (uuid bb3d2ee3-e57b-4350-9835-10ada21fcbd8))
+    (pin "2" (uuid ecc6898f-e2b6-4125-a961-0bd3832bdc44))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9468,14 +9436,14 @@
     (property "Value" "10u" (at 55.88 250.19 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 61.2648 252.73 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 61.2648 252.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 62.23 248.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 59aa1cae-7969-470a-b6b3-260de2584ac4))
-    (pin "2" (uuid 2b2d4f8d-1812-4058-a797-37e0e3f8d196))
+    (pin "1" (uuid c6661ff5-d2c3-45fd-ae69-c50f60ac8799))
+    (pin "2" (uuid 105bd467-9f4c-44ad-8aff-bb472ab324e9))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9494,14 +9462,14 @@
     (property "Value" "C" (at 50.8 68.58 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 54.61 72.6948 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 54.61 72.6948 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 50.8 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 07d8e85e-6952-4b4f-8be2-e0dd3596dd9f))
-    (pin "2" (uuid 898f0af1-50cd-4691-a9ce-a4788cdd528f))
+    (pin "1" (uuid 6d7fbcbc-f158-4a18-985a-ecc760837009))
+    (pin "2" (uuid ff865d2b-5987-4dc7-9d6d-776220425c45))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9526,8 +9494,8 @@
     (property "Datasheet" "~" (at 167.64 248.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 70610871-42f1-4720-bbf7-2a9eb8527856))
-    (pin "2" (uuid 124df01f-cc60-4de7-a810-3055f43a10d6))
+    (pin "1" (uuid 294d2f20-653f-4d0f-8d34-772a41aab515))
+    (pin "2" (uuid 88d3e6e0-cdae-4723-9832-f01255077e62))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9552,10 +9520,10 @@
     (property "Datasheet" "~" (at 125.73 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2aaa7679-0f93-47ea-8127-b437076e858b))
-    (pin "2" (uuid 9d357401-0cae-4679-8a0a-8959b13ec5ce))
-    (pin "3" (uuid 02122257-0949-47fd-8c4f-9e0bb130d5af))
-    (pin "4" (uuid b5cfffda-70e3-4160-b987-adba2cf63b99))
+    (pin "1" (uuid 476b8a5d-96a4-474c-8849-735451afda1e))
+    (pin "2" (uuid 368fc1cf-856e-4677-959c-b093487a9ef5))
+    (pin "3" (uuid 470c378a-74dc-4d1c-a380-492852f190a7))
+    (pin "4" (uuid 24e7b0c7-a613-4cc0-9de0-e7527491cd9c))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9580,8 +9548,8 @@
     (property "Datasheet" "~" (at 323.85 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9ffadf24-0156-4627-8411-0c9e3166a8e6))
-    (pin "2" (uuid a2763dc0-eba0-49a6-90d6-b8d4e2707fdc))
+    (pin "1" (uuid 2226bdd8-9441-4f27-b7e6-939b0d63854c))
+    (pin "2" (uuid 2f3584ab-e370-452c-a530-e4402cde13ee))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9606,14 +9574,14 @@
     (property "Datasheet" "~" (at 341.63 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9e2ca92f-d25f-439d-9142-6d1b27e6132e))
-    (pin "2" (uuid f3f77112-2f9c-45b1-8fcd-d125a2ef39d0))
-    (pin "7" (uuid 1b89daf4-370f-46bd-bb45-eca8d89e8c16))
-    (pin "8" (uuid b68888a0-4e07-4b32-9f92-6c4325004ae3))
-    (pin "3" (uuid fbf371e9-9d66-4ae9-836c-6c380bd87418))
-    (pin "4" (uuid 22d448de-a573-4478-a239-46841bef69a9))
-    (pin "5" (uuid f79c9e27-73b4-4146-b0ea-54322c815452))
-    (pin "6" (uuid fe325a45-b811-4539-9fad-1d9459fccf74))
+    (pin "1" (uuid 6c84f25a-dbe1-4119-92a4-e9d41a2a3e2a))
+    (pin "2" (uuid 056374fe-ae52-4059-a4a4-51d6bda78eeb))
+    (pin "7" (uuid d4360faa-b96c-44c0-8373-ae0fd9d92824))
+    (pin "8" (uuid 28d44179-99c8-4f1b-9f57-29d70200f98b))
+    (pin "3" (uuid 53877ac5-bc45-456f-af67-29fbbd8f251a))
+    (pin "4" (uuid 59709c31-b8a2-469c-99b3-254c2ed42792))
+    (pin "5" (uuid b553e32a-5624-4be7-894c-3444b20c1ae1))
+    (pin "6" (uuid dc0141ea-73ed-4368-bcc7-32f24fdd7eb4))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9688,8 +9656,8 @@
     (property "Datasheet" "~" (at 57.15 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f6be6335-64a3-4bb6-9e45-6a244aa07d91))
-    (pin "2" (uuid 13e42235-0de1-4525-83a6-b6ec62e39ec1))
+    (pin "1" (uuid 5303de76-6ca3-4cc6-b791-73d1172f17d0))
+    (pin "2" (uuid c2b23a88-6899-41d7-849c-24b08e140ff0))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9733,14 +9701,14 @@
     (property "Value" "C" (at 19.05 86.36 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 14.2748 88.9 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 14.2748 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 15.24 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0a8c882f-0587-4742-a665-3b35966c77cf))
-    (pin "2" (uuid 5ea363bd-4fd4-4413-b5b3-62dd5019eb14))
+    (pin "1" (uuid 04ed8ff0-cfa7-416c-86cd-c3799a06f1d5))
+    (pin "2" (uuid a839beb7-b718-448e-92e7-c02555e30d18))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9765,9 +9733,9 @@
     (property "Datasheet" "~" (at 354.33 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid cde9cc29-b7f0-4d92-9623-5e5ef72d2f17))
-    (pin "2" (uuid cd03c4a1-671f-45ea-a8d4-a856dbffbaf9))
-    (pin "3" (uuid 67b80941-a1af-436d-83aa-c365b89ba80e))
+    (pin "1" (uuid 36de1fad-8cf6-494f-8a20-be35baf88dcd))
+    (pin "2" (uuid a736dbf4-75d9-409d-b72e-867abd789510))
+    (pin "3" (uuid 87242b7a-df91-4464-939b-1c4b2159d6b0))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9786,14 +9754,14 @@
     (property "Value" "C" (at 298.45 27.94 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 302.26 32.0548 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 302.26 32.0548 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 298.45 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 89536c26-4a07-411d-9bad-7eb1ff64a6e6))
-    (pin "2" (uuid 67a3348e-653c-4045-94f9-9b4008e94ea5))
+    (pin "1" (uuid df6c6c8e-dd66-4ca4-9ce6-cdf293ef2dd5))
+    (pin "2" (uuid 1458a04a-12c5-4666-b5e6-fe78e883bd78))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9812,14 +9780,14 @@
     (property "Value" "LED" (at 157.48 95.5675 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 153.67 92.71 0)
+    (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 153.67 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 153.67 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid aa00645d-368b-4662-8f7e-31b1f17f6df5))
-    (pin "2" (uuid 9fc3c16c-afec-4a2b-b9be-92e2dfe88810))
+    (pin "1" (uuid ea2bda01-99ca-4c46-9710-6e2ea525b73c))
+    (pin "2" (uuid f259afb1-c8ea-4943-8eb0-844b13ac41a0))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9844,8 +9812,8 @@
     (property "Datasheet" "~" (at 107.95 248.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid aa2a3d0f-ada2-4146-85ac-b96d52af8c35))
-    (pin "2" (uuid 7ff3bc5e-fda7-4036-86a1-3fee093f41db))
+    (pin "1" (uuid e029f101-e2fe-40ea-9c6e-22e866033fad))
+    (pin "2" (uuid bc4f9792-007d-4d0a-be99-dd7f455f6950))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9870,8 +9838,8 @@
     (property "Datasheet" "~" (at 201.93 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 525f4040-a83b-49d4-8ec7-936049e08586))
-    (pin "2" (uuid e764fb57-46ed-4acb-a4cc-8843ef5b68ee))
+    (pin "1" (uuid c71515c4-cf72-4569-80b2-848af1367330))
+    (pin "2" (uuid 1beb19c4-e5cd-43a6-a841-b951232f1245))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9909,20 +9877,20 @@
   (symbol (lib_id "Device:L") (at 186.69 26.67 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b6772be6-67fd-47ba-9cd5-7509f8c33a5a)
-    (property "Reference" "L1" (at 184.15 24.13 90)
+    (property "Reference" "L1" (at 186.69 22.86 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "L" (at 189.23 24.13 90)
+    (property "Value" "BLM18PG600SN1D" (at 189.23 24.13 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 186.69 26.67 0)
+    (property "Footprint" "Inductor_SMD:L_0603_1608Metric" (at 186.69 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 186.69 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 81fb598c-f54b-4ea0-9c6e-3e9b278eaf92))
-    (pin "2" (uuid 9eb95f64-99e1-4a5b-b3e3-77e0192710c8))
+    (pin "1" (uuid e84acc4e-e419-42bc-aa57-7f88c25ce8ac))
+    (pin "2" (uuid a113e043-4707-4df5-abee-0558ec51ac04))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9941,14 +9909,14 @@
     (property "Value" "C" (at 115.57 55.88 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 112.7252 58.42 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 112.7252 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 111.76 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 77f08b58-2c51-41ae-aefb-dd638df4ea15))
-    (pin "2" (uuid b84b674e-53ce-47a5-9d87-e4f19e84daef))
+    (pin "1" (uuid 5dbaa4f9-74dd-4065-a4f5-fb35bd6907d2))
+    (pin "2" (uuid c79c8edb-49c8-48cd-96c5-fd812b8a7239))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -9998,9 +9966,9 @@
     (property "Datasheet" "~" (at 354.33 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a5d5bc3d-706f-4c47-a3d4-61a5a6bbeed4))
-    (pin "2" (uuid c51784a9-daf7-4a6a-bdc7-1f67b5346938))
-    (pin "3" (uuid 9d435086-f910-4847-bfd1-d1cd28a506de))
+    (pin "1" (uuid ee5fc50d-de9f-4b45-a40f-541df0339eaf))
+    (pin "2" (uuid 6eaf3217-b240-4a80-ab4b-662f8c347b4f))
+    (pin "3" (uuid 774f1bfb-0dc3-4739-bae3-f21b06f88ac3))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10044,14 +10012,14 @@
     (property "Value" "C" (at 194.31 92.71 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 196.85 97.4852 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 196.85 97.4852 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 193.04 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 28b07e92-8b4d-4393-8a70-b4cd95fc7fdf))
-    (pin "2" (uuid 264aa72c-330b-4acc-98d5-b5cdf385e1d1))
+    (pin "1" (uuid cb2e1f1c-fd1d-4650-b33e-a45725b82783))
+    (pin "2" (uuid cc360b97-162a-4ec2-9828-73b8af473bc3))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10076,9 +10044,9 @@
     (property "Datasheet" "~" (at 354.33 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a26d9d76-2b23-437b-8bc6-666ac4f575cf))
-    (pin "2" (uuid f2394c10-5aa0-4971-b07c-62ba90de7b43))
-    (pin "3" (uuid 0a4da61c-a9ae-4460-a051-11b718a5df36))
+    (pin "1" (uuid 9155e872-e6eb-441b-b4ab-47b13d9aeb1b))
+    (pin "2" (uuid 6dd95796-4e4c-41bf-b770-388eaff2a7fe))
+    (pin "3" (uuid f841b608-04cd-40b1-9482-67247a042654))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10128,8 +10096,8 @@
     (property "Datasheet" "~" (at 77.47 248.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2716c4a3-de0e-46d8-873d-baf1a3228894))
-    (pin "2" (uuid debdc0ee-63b2-445f-8683-2f589dc9654c))
+    (pin "1" (uuid 4b493233-8b3d-4353-9bc5-ab19f14a2a9b))
+    (pin "2" (uuid 17b1721b-7235-4a5e-b6db-c23681ffbe19))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10148,14 +10116,14 @@
     (property "Value" "C" (at 298.45 137.16 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 302.26 141.2748 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 302.26 141.2748 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 298.45 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b02aa529-9869-4b6a-a0a9-a6192f1126b1))
-    (pin "2" (uuid 10f5487f-5cbb-48e4-baff-eb4cbc813304))
+    (pin "1" (uuid 7b0e5cc1-eff4-4005-bb46-fda51eafa9d8))
+    (pin "2" (uuid 2d5e49e4-f6b4-4544-a2ad-afa42d1c73b2))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10180,8 +10148,8 @@
     (property "Datasheet" "~" (at 57.15 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 02b1a15c-9a19-4bec-8365-5b1fb8d944e5))
-    (pin "2" (uuid 2535fa63-a9b5-48e2-aea5-daea52a9712f))
+    (pin "1" (uuid ff084508-d003-47dd-be38-b5feb61081b2))
+    (pin "2" (uuid 122b0bc7-dc5b-4d17-9751-1361f0bb413d))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10231,14 +10199,14 @@
     (property "Datasheet" "~" (at 341.63 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a21b1496-70b0-4fc3-8e4f-29046d04ea08))
-    (pin "2" (uuid b6d5f6b4-64ee-4b7c-8f48-b7564f4578a4))
-    (pin "7" (uuid ef25b7a8-1d1d-42da-be4d-c6f46556ae27))
-    (pin "8" (uuid baa71361-2a34-4fe5-b514-a66433465bb9))
-    (pin "3" (uuid da6708e4-2717-443c-a44c-5016f3bbda78))
-    (pin "4" (uuid 1c5a8273-3504-46fe-a065-df4abae152fa))
-    (pin "5" (uuid a237e22d-f9d1-4e26-97be-c75795db1365))
-    (pin "6" (uuid 4edcd085-846e-48ac-ab56-49cf8f830af7))
+    (pin "1" (uuid 551d7fde-e852-4421-b887-4c41880cee4b))
+    (pin "2" (uuid a4069821-6cce-4216-8a6b-0b3841bed7ec))
+    (pin "7" (uuid cc7211b3-231a-4395-86c8-6595c7e90937))
+    (pin "8" (uuid c43e00ee-6939-4f09-bba3-c93b9a210a73))
+    (pin "3" (uuid 9fdcdd41-87c8-41cd-afae-60aa5de6794c))
+    (pin "4" (uuid 7328e79c-d568-4c41-be97-f056bcb442c4))
+    (pin "5" (uuid 67b145d3-9089-4363-9bc0-f19b3cd268d6))
+    (pin "6" (uuid fc8b2324-aefb-48b0-bb65-ef72060c541c))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10263,8 +10231,8 @@
     (property "Datasheet" "~" (at 161.29 233.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 17909bb9-d287-4f69-824e-b96b762e84f4))
-    (pin "2" (uuid 70148b05-fb65-4fb2-b842-4f08cb185804))
+    (pin "1" (uuid 878f3b88-5bc4-4c0c-a1e3-ecb86afa2391))
+    (pin "2" (uuid 956bb79a-7ded-4c75-9aea-a170fb830eda))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10289,8 +10257,8 @@
     (property "Datasheet" "~" (at 74.93 194.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid cd9fccd2-506a-4470-9831-beab75fa4a8b))
-    (pin "2" (uuid 1f8e14f1-aa80-4a30-bf28-bd8272e782fc))
+    (pin "1" (uuid 9038d960-de3f-4c93-9cf4-aa5823276060))
+    (pin "2" (uuid c2761f2c-eb82-46d4-ac97-15c02b1f4209))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10309,14 +10277,14 @@
     (property "Value" "C" (at 134.62 31.75 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 131.7752 34.29 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 131.7752 34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 130.81 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 42f3bed6-eca1-4928-8705-a12f07ec9bf2))
-    (pin "2" (uuid eb63d5d7-bf45-40a2-a636-363b051e7e36))
+    (pin "1" (uuid 994232e3-7804-42f6-8b78-b0790f4519be))
+    (pin "2" (uuid 9185b8e1-de7f-4040-bffb-a7a3d4cead4d))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10341,8 +10309,8 @@
     (property "Datasheet" "~" (at 227.33 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8d574afe-3b86-4bbc-be99-417b51b675a2))
-    (pin "2" (uuid 466a7a35-df84-42c1-920a-a20cee028478))
+    (pin "1" (uuid 088a80ae-4033-41f7-9f38-b23583bcadc6))
+    (pin "2" (uuid 8e255906-b135-4697-9891-a38c5ce020cc))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10361,14 +10329,14 @@
     (property "Value" "C" (at 321.31 190.5 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 317.5 196.5452 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 317.5 196.5452 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 321.31 195.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c6166236-0951-433d-9b7f-ba305ef2bb7f))
-    (pin "2" (uuid 900c7cfd-1c7f-4c53-8b8d-2475fc28c37d))
+    (pin "1" (uuid eb6fb3e0-83d3-424f-a353-cb6e6a8f32b1))
+    (pin "2" (uuid aca25520-5418-4457-a38c-22e947f0cb52))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10418,13 +10386,13 @@
     (property "Datasheet" "" (at 93.98 233.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid fe01062c-3786-4358-83e4-d58f9d92f75d))
-    (pin "2" (uuid 9e48abc8-ba38-431e-9322-c8627e85cade))
-    (pin "3" (uuid 9c40cb41-b864-44ba-a044-4474d96f9155))
-    (pin "4" (uuid 3da5d06c-5140-4941-9339-10624db08fb6))
-    (pin "5" (uuid 5da7a16e-de18-448b-ac46-1c9301d1a2de))
-    (pin "6" (uuid 70703d29-347a-422f-8de1-be96577a2214))
-    (pin "7" (uuid 38040ca9-24ba-4909-9a4f-253a7dbc0fbb))
+    (pin "1" (uuid e731496d-e385-4dfb-b384-b3f79020b4ee))
+    (pin "2" (uuid f9344a27-4e8c-4133-bd0e-80fff588e1bc))
+    (pin "3" (uuid 032d88aa-a704-4319-8179-519ca0a1d956))
+    (pin "4" (uuid 01d327dd-0633-4c48-b032-ece5a87fbb21))
+    (pin "5" (uuid 7b7e5c85-979a-4249-ae50-2cf986d6b9ac))
+    (pin "6" (uuid 3de1a59e-bf07-45a2-a5de-9b0a419076c2))
+    (pin "7" (uuid a34b1dd6-ea0c-42a4-9c77-7e8764445023))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10449,16 +10417,16 @@
     (property "Datasheet" "~" (at 46.99 170.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3c756f82-ed04-47bb-86ae-e8632fc2e71f))
-    (pin "10" (uuid b36dc0ea-fac0-4d2b-8531-1c269d901041))
-    (pin "2" (uuid cf0ad672-4603-497e-ae63-3d6a33459b91))
-    (pin "3" (uuid 1c78332b-54ab-4192-8f45-2054b30ccc4a))
-    (pin "4" (uuid 8d521145-f677-41d4-b950-d80d8af49d22))
-    (pin "5" (uuid 6339378c-928a-42e7-b519-510753b07196))
-    (pin "6" (uuid efca9e45-8cd8-4c42-98d2-5f0261ee081e))
-    (pin "7" (uuid 5cde814a-89da-4c1f-95f9-6992a9efc310))
-    (pin "8" (uuid a99ebf0c-4374-4d43-86ba-88cd92eacf38))
-    (pin "9" (uuid 3185a121-16bb-47bd-a071-666bef1585b2))
+    (pin "1" (uuid b6b67cd2-c270-4f47-b4bb-3bc4bacefccd))
+    (pin "10" (uuid 3670877c-dcad-46cc-846b-6fa6e0bea6c2))
+    (pin "2" (uuid 790033ae-76a7-4215-83d6-b8cd613ca162))
+    (pin "3" (uuid 1766baae-aa52-4e62-ac2d-21b4acce7741))
+    (pin "4" (uuid 9b2965cf-f2d3-4bc5-8da3-a286149d8518))
+    (pin "5" (uuid b1b19f4d-2eac-4ece-a695-f8f089296ffd))
+    (pin "6" (uuid 65d48078-0d54-4b15-856a-af2892b48a3e))
+    (pin "7" (uuid 655a06a6-147f-411c-828f-3008b20f93da))
+    (pin "8" (uuid 2da13449-6c68-4a82-a6b6-52471d5467c2))
+    (pin "9" (uuid b4761a69-0ad7-47c9-ad94-e74a58fc2483))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10483,14 +10451,14 @@
     (property "Datasheet" "~" (at 341.63 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a692bdc7-d93f-4746-8f5f-be15600fa1dd))
-    (pin "2" (uuid 7e0700fa-b399-4036-8f2a-817ea26cacfd))
-    (pin "7" (uuid 0ee7031b-ebb1-4f83-8f96-3adea5c2683d))
-    (pin "8" (uuid d4ec95cc-2ccd-4dc9-9e82-4a24d4dae9a9))
-    (pin "3" (uuid b246242f-a27c-4fb8-805d-c327136732f7))
-    (pin "4" (uuid 3de7245e-0b64-40d0-9626-dae27a534daa))
-    (pin "5" (uuid fe8bcc85-ebbe-4a21-b92a-9b8e2dfbd697))
-    (pin "6" (uuid 87cccd85-b7e3-4fd8-9140-e2109bd70433))
+    (pin "1" (uuid d6914189-c27c-42ab-9156-29258e6aaffe))
+    (pin "2" (uuid 16ba85d3-073c-4331-b361-2b28f6b4cfcf))
+    (pin "7" (uuid bf10c2e9-e434-45ad-aeea-11aa77601641))
+    (pin "8" (uuid ce478a4d-f849-45ed-80c6-0b6f764caded))
+    (pin "3" (uuid cc4195ca-923b-45bb-9305-e6a641a107a2))
+    (pin "4" (uuid c34862c2-fc5b-4108-a32e-056a2c9fd5f3))
+    (pin "5" (uuid b3023f94-c08c-42da-8a04-dbfdcfc901b5))
+    (pin "6" (uuid 2eba5730-812b-42b3-a23d-d21849959fdc))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10515,8 +10483,8 @@
     (property "Datasheet" "~" (at 59.69 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e59a81a6-72a5-4ce6-bf0a-24ecce0e7240))
-    (pin "2" (uuid 5985b697-e979-4e86-8dae-de7827c49072))
+    (pin "1" (uuid 1f350a40-fde5-4ccc-8e24-a37d21dee47d))
+    (pin "2" (uuid e80a2a95-a41b-4362-a8d8-e08d1fcca322))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10566,13 +10534,13 @@
     (property "Datasheet" "" (at 151.13 237.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5ec8e8c7-b257-4faf-ac08-faf0256579a1))
-    (pin "2" (uuid 90ee3d5d-5b14-4758-9289-7f12da614733))
-    (pin "3" (uuid 23bff1b6-a0d3-48c6-ac68-f7e44670b896))
-    (pin "4" (uuid c8e65b9a-b19d-4074-9c04-155cbcf3bfe3))
-    (pin "5" (uuid 4b448592-5ac3-4bcb-860e-8d682b2623b2))
-    (pin "6" (uuid 0c88df47-cfaa-47a6-a665-b4d276ec9193))
-    (pin "7" (uuid fbb8df27-4581-4850-9628-d7b4ed1cc6ee))
+    (pin "1" (uuid 67ed0efc-15a4-430d-8380-57ad3d7f410a))
+    (pin "2" (uuid d4343cd9-1761-426c-a8d1-584abf986957))
+    (pin "3" (uuid ba542eac-b016-46dd-96f9-db364d5d3ec5))
+    (pin "4" (uuid f7b96013-fea8-4177-b448-dcdd175b5136))
+    (pin "5" (uuid d4efda87-b817-4053-8c68-0a9b38d1f866))
+    (pin "6" (uuid e7a99c12-9ef5-437e-a9c5-6c2a1116cc98))
+    (pin "7" (uuid 67aa80b4-69f4-4303-8c1a-c886ecde2d9a))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10597,8 +10565,8 @@
     (property "Datasheet" "~" (at 78.74 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7443996e-e259-48bf-ad91-0d36ef551982))
-    (pin "2" (uuid 9ff37183-adf5-4bfb-a519-cba045c8ce58))
+    (pin "1" (uuid 9f1ce07b-5f29-4978-843d-f52211ac70d6))
+    (pin "2" (uuid 849b4c6a-f85b-49e4-bfec-fdfb35eb8382))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10623,38 +10591,12 @@
     (property "Datasheet" "~" (at 365.76 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c9b4c3c3-eb19-409d-b9b4-6ebb5adcab9a))
-    (pin "2" (uuid edecd329-1358-4a15-832c-02a874b9daa6))
+    (pin "1" (uuid 3626ccfc-7075-43e2-939f-2a5ee863130d))
+    (pin "2" (uuid 0b76b304-e328-4cb4-909d-577cc0fc9c3e))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
           (reference "J3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Switch:SW_Push") (at 57.15 54.61 270) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid d5adacf6-9c51-483f-a996-4b52fdc2fa7a)
-    (property "Reference" "SW1" (at 55.88 53.34 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "SW_Push" (at 55.88 55.88 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "" (at 62.23 54.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 62.23 54.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4327dac8-d753-4aeb-b0c4-a5db06052b78))
-    (pin "2" (uuid b4d56869-14e6-48ac-82af-00f50d200065))
-    (instances
-      (project "MotorController"
-        (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
-          (reference "SW1") (unit 1)
         )
       )
     )
@@ -10719,14 +10661,14 @@
     (property "Value" "C" (at 175.26 71.12 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 178.1048 73.66 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 178.1048 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 179.07 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b47431c3-f543-4796-abf7-2062c270e8dc))
-    (pin "2" (uuid 2a3fcf4b-f405-4129-9feb-c1e771764aa6))
+    (pin "1" (uuid 0eec5f79-cd23-4812-aab3-92eaf6085d63))
+    (pin "2" (uuid ddaaf4ec-85f3-47e3-8834-89d8f45fc3ab))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10751,8 +10693,8 @@
     (property "Datasheet" "~" (at 323.85 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 04c4a74d-19b7-4ff2-b56c-02032280b316))
-    (pin "2" (uuid b71e3e90-9587-48fd-89a3-282dbc0c1ee1))
+    (pin "1" (uuid 47eacbae-7de9-4373-9d83-205678d1cc3b))
+    (pin "2" (uuid 0dcd40b6-5bc1-4b7d-bc72-21f28a6bdff0))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10777,9 +10719,9 @@
     (property "Datasheet" "~" (at 354.33 204.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e5914458-44f1-4815-9995-58188fd50e14))
-    (pin "2" (uuid 10af5c57-1bbd-463d-a75b-cdcdf9cc30c7))
-    (pin "3" (uuid 638cb96f-ad8c-4d0a-893f-d33e882416b3))
+    (pin "1" (uuid c9b4e53d-e1bd-4661-84f5-aaf5cc5a4466))
+    (pin "2" (uuid 815118d6-f054-48a4-aa30-41219c9c7337))
+    (pin "3" (uuid 2cb952b2-8a13-4751-b7f5-adb4ec6e089a))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10798,14 +10740,14 @@
     (property "Value" "ECASD60J337M009KA0" (at 210.82 256.54 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 207.9752 259.08 0)
+    (property "Footprint" "LibraryLoader:CAPPM7343X310N" (at 207.9752 259.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 207.01 255.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 61c8182f-b7ec-4837-8267-48bc544e04f9))
-    (pin "2" (uuid 65fa7521-0ef5-4bc6-930c-6447a7b4c700))
+    (pin "1" (uuid 8e05b12d-9500-430e-8c13-2aff0edaa7f7))
+    (pin "2" (uuid b59db8ba-5784-4f1f-83e9-3fda72fefd9d))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10824,14 +10766,14 @@
     (property "Value" "LED" (at 133.35 256.8575 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 129.54 254 0)
+    (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 129.54 254 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 129.54 254 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3fe53f44-6eb0-4f9e-ab16-64587ffc58ac))
-    (pin "2" (uuid 92313ab8-5e3f-403f-9f72-616883d2f020))
+    (pin "1" (uuid 745fc614-ab4a-4771-8151-0e10ccdeda05))
+    (pin "2" (uuid 7d66ff76-d604-4bab-95a7-5aff0fe64095))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10931,9 +10873,9 @@
     (property "Datasheet" "~" (at 354.33 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ec416ae1-3080-42cb-85ab-c205be4042d4))
-    (pin "2" (uuid 1643903b-7bd9-4622-9ad1-05a823e1bf0a))
-    (pin "3" (uuid 072b3e1e-156b-4da8-bad6-7ec8faebc383))
+    (pin "1" (uuid de6866b8-dfd9-4409-a694-fef91fa2633f))
+    (pin "2" (uuid f037a46a-91ba-4c27-846d-0d4149391d9d))
+    (pin "3" (uuid 24330781-544c-403c-b358-039e11329955))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10952,14 +10894,14 @@
     (property "Value" "470n" (at 290.83 139.7 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 286.0548 134.62 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 286.0548 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 287.02 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bf13d996-8967-4d5a-88aa-7f8eeccb4873))
-    (pin "2" (uuid 5640db50-a952-4fa3-bb7c-40619c006734))
+    (pin "1" (uuid 07275598-8d21-480d-b576-66151bd3b51e))
+    (pin "2" (uuid ab154111-74b5-441f-bbc5-86cee1537cd1))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -10984,8 +10926,8 @@
     (property "Datasheet" "~" (at 218.44 241.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 387aadf9-c62e-4755-8e67-a72b1a6e094e))
-    (pin "2" (uuid 5a47c640-a7c9-4002-9e32-e95fe57a4ea2))
+    (pin "1" (uuid d075cf63-beb6-4a46-b9e4-7714335bf994))
+    (pin "2" (uuid ad10e461-7a1e-4fd7-889d-955ec05ea90e))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -11010,8 +10952,8 @@
     (property "Datasheet" "~" (at 69.85 236.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5e759b30-ad0c-4df5-b3a5-bbb5b8df8244))
-    (pin "2" (uuid 0d7419d9-16ea-4dc9-b252-a67db13d066f))
+    (pin "1" (uuid 366d87f2-fbed-49ac-b000-a6b5d13b9396))
+    (pin "2" (uuid 2a723a4c-2099-43b6-bff5-911133a7d3ad))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -11030,14 +10972,14 @@
     (property "Value" "CUHS20S30" (at 196.85 33.02 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Diode_SMD:D_MELF" (at 189.865 35.56 0)
+    (property "Footprint" "LibraryLoader:CUHS20S40H3F" (at 189.865 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.microsemi.com/document-portal/doc_download/131890-lds-0040-1-datasheet" (at 194.31 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid acd166b3-cf64-4306-a816-7325bc24fbcb))
-    (pin "2" (uuid fd3ec33d-e675-4ff3-a205-1ea24e30c765))
+    (pin "1" (uuid c3ec3f84-abdb-491f-b97b-7a14c0346521))
+    (pin "2" (uuid e3d759c8-d2cf-4552-9088-40899fccc26c))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -11062,8 +11004,8 @@
     (property "Datasheet" "~" (at 129.54 241.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid dffb608e-aa7c-4e37-b7fb-4c679a56dc08))
-    (pin "2" (uuid 1abb624d-42ae-4fab-97d3-f99cbcf6e73a))
+    (pin "1" (uuid eb7a1554-3eba-44d0-9378-28a3415da29d))
+    (pin "2" (uuid ab11cb3a-daf1-46f1-8fa7-e5132d8f295d))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -11088,8 +11030,8 @@
     (property "Datasheet" "~" (at 323.85 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid eb6ad829-c90d-449f-bbbb-e85a1d47cead))
-    (pin "2" (uuid 48c50579-cd77-4944-8383-615f4bec8981))
+    (pin "1" (uuid a0aadd40-6851-4095-9de1-6a7f6d667456))
+    (pin "2" (uuid 645ecfa5-7cef-4fdf-b79e-419e2b0353c7))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -11114,8 +11056,8 @@
     (property "Datasheet" "~" (at 271.78 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 85ddaa9b-9b5b-46c6-9f2e-c8d020450b10))
-    (pin "2" (uuid 8993c8c6-2889-49c0-a647-5ad185c77829))
+    (pin "1" (uuid 4b080191-1444-4d16-b724-d543c99bbf9f))
+    (pin "2" (uuid 7fe33059-df8b-4d36-ba2e-049fe086e0c9))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -11134,14 +11076,14 @@
     (property "Value" "XT" (at 92.71 212.09 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 90.17 209.55 0)
+    (property "Footprint" "LibraryLoader:XT30PWF" (at 90.17 209.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 90.17 209.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bf470210-3f06-47eb-a6f3-dcd22a92528a))
-    (pin "2" (uuid 816d5942-5233-4038-8f63-d36747da29b9))
+    (pin "1" (uuid f6f19905-40ec-4db4-8978-48aed7b866b6))
+    (pin "2" (uuid 1a5e3b68-1b83-4e82-bc08-0c16731808de))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -11191,8 +11133,8 @@
     (property "Datasheet" "~" (at 36.83 237.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 08161d1c-8d9d-4e14-964d-eda162eaa8cb))
-    (pin "2" (uuid 5c175c99-6d38-44f6-a6dc-7c3293d33f80))
+    (pin "1" (uuid dea1879a-075b-41c4-8d46-8105c15c520b))
+    (pin "2" (uuid d2492131-440f-4b63-a59f-5b1e5285e0c2))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -11267,8 +11209,8 @@
     (property "Datasheet" "~" (at 59.69 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d52c2ca9-a750-4ba6-9605-dd65c789bd16))
-    (pin "2" (uuid 10455339-f940-449a-bd12-80c0d034478f))
+    (pin "1" (uuid b7f6976c-fdf8-44b6-97a9-38ef3650a676))
+    (pin "2" (uuid 131e7bcc-551f-4457-8b5a-856940fd9d5c))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -11293,14 +11235,14 @@
     (property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/20005533A.pdf" (at 186.69 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c922e29b-9cd1-4811-9540-00aa0ffea4a3))
-    (pin "2" (uuid 620987de-f0ba-4c3a-b4f9-f90e5a8f4ab9))
-    (pin "3" (uuid ce8ad8f0-d11b-43a1-b354-ce28110a78ff))
-    (pin "4" (uuid af3e0749-b66d-4a1a-9c82-1b8b8ba6bdaf))
-    (pin "5" (uuid 742d1f9e-4acb-497f-95e2-58d511985967))
-    (pin "6" (uuid 9b0e57fa-1985-42ee-a99c-89dab09e4fff))
-    (pin "7" (uuid c90f6918-c510-4cfc-a61e-f49bbf459b4c))
-    (pin "8" (uuid 1f2720db-05cd-4373-a584-9a9d256266e3))
+    (pin "1" (uuid 9509fc6b-b1bb-43e9-b3f0-f1fa290b574a))
+    (pin "2" (uuid 29785f61-2e50-4c53-a875-4b7a4cd8227e))
+    (pin "3" (uuid 7f58abeb-ea90-4719-b978-bd142bfe83c4))
+    (pin "4" (uuid cbec9ceb-0590-476a-a1eb-a8f73507ddc5))
+    (pin "5" (uuid 90f25a5d-c660-4e63-9dae-b6a9fb32e8c8))
+    (pin "6" (uuid 9a012c74-99ff-4594-b3bb-43c15ac53498))
+    (pin "7" (uuid 17dace36-eb46-45a8-a469-876d5e7b8352))
+    (pin "8" (uuid 5314bf2a-f14a-416e-9c7e-fdc71e4d966b))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -11369,14 +11311,14 @@
     (property "Value" "C" (at 275.59 143.51 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 275.59 143.2052 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 275.59 143.2052 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 271.78 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a2960802-3914-4cbd-a25a-66dba53a8ad6))
-    (pin "2" (uuid 84078639-156c-44ae-9440-8fb17176d84f))
+    (pin "1" (uuid 79c6552e-8981-40d9-ae1c-434373255e47))
+    (pin "2" (uuid 3bca49f5-7557-4eca-8d3f-58c62ee9d276))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -11420,18 +11362,18 @@
     (property "Value" "USB_B_Micro" (at 200.66 39.37 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 203.2 49.53 0)
+    (property "Footprint" "Connector_USB:USB_Micro-B_Amphenol_10118194_Horizontal" (at 203.2 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 203.2 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 93b01f43-8944-4be7-b0b1-35a42a76e913))
-    (pin "2" (uuid 2a0d39de-1068-44d1-8b4c-31fafc0d8232))
-    (pin "3" (uuid 352a0ded-def6-4661-94b6-c77b78a1a491))
-    (pin "4" (uuid 42f3cc2d-7fa0-499a-b54e-05fd2012dcef))
-    (pin "5" (uuid b92ce3bc-a0dd-48b5-aa32-3d755b094b30))
-    (pin "6" (uuid 43df6a8b-e2c2-4d97-b4a8-a207c62e88dc))
+    (pin "1" (uuid 8d45cb99-8048-4250-b5d1-1b795a570987))
+    (pin "2" (uuid 165109e6-6f7a-4c40-b796-aee0f12b79ed))
+    (pin "3" (uuid 985b5e7c-2f85-4c93-a9a6-8a64764b053f))
+    (pin "4" (uuid 6c32520b-09aa-44fc-86cf-e48ac6e72bab))
+    (pin "5" (uuid b770616e-a7d7-4c2e-b410-76d186744c37))
+    (pin "6" (uuid 4d4e6de5-9396-41ed-886e-febf10d4c719))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
@@ -11475,18 +11417,46 @@
     (property "Value" "C" (at 275.59 34.29 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 275.59 33.9852 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 275.59 33.9852 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 271.78 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid fc01ea11-6e39-4443-a6c2-2bc7fc7016b7))
-    (pin "2" (uuid e068dc27-60e0-4943-a4be-4807816f93af))
+    (pin "1" (uuid 5dfc0968-6f6a-477d-ae3a-eaf55bf8ccc8))
+    (pin "2" (uuid b699f86c-b514-437f-ab19-b58813b37f40))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
           (reference "C6") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_MEC_5E") (at 54.61 54.61 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid fcf4d3d1-6139-48ac-9306-a87d90088eb6)
+    (property "Reference" "SW5" (at 60.96 53.34 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "SW_MEC_5E" (at 60.96 55.88 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 62.23 54.61 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" (at 62.23 54.61 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid fec1f43b-2701-4d93-879a-f749473fccc7))
+    (pin "2" (uuid 5ea857b1-2aa3-4116-be77-df72c6419b9c))
+    (pin "3" (uuid 3521a5ce-e1c5-4c3e-9da0-c47a0f8dee7d))
+    (pin "4" (uuid 5411d686-aee6-4fe7-a358-04ec7773547c))
+    (instances
+      (project "MotorController"
+        (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
+          (reference "SW5") (unit 1)
         )
       )
     )
@@ -11507,8 +11477,8 @@
     (property "Datasheet" "~" (at 227.33 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 24136549-3925-4f63-8b7b-341757c767c0))
-    (pin "2" (uuid 84c646e7-423e-40cf-9f9f-f7291ee06201))
+    (pin "1" (uuid 39c9184f-b516-42fc-a374-b5724e29d6c5))
+    (pin "2" (uuid e219028b-2197-4d8b-bc92-7ba0cd35bf9e))
     (instances
       (project "MotorController"
         (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
