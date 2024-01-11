@@ -9254,32 +9254,6 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 21.59 71.12 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 934ac538-80b7-41a2-a429-82c70a47bf0c)
-    (property "Reference" "R8" (at 24.13 69.85 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "R" (at 24.13 72.39 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 19.812 71.12 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 21.59 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 3661e8e7-5bf3-4129-9c78-7de01a669662))
-    (pin "2" (uuid 9708df36-0b07-4d65-92cb-6fa43b5a2293))
-    (instances
-      (project "MotorController"
-        (path "/5f98a318-5528-4c4b-bcf3-90ead89a063c"
-          (reference "R8") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:C") (at 220.98 43.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 93c863fb-50a9-413d-80c7-4cd390feaa92)
