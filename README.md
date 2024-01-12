@@ -1,6 +1,9 @@
 # MotorController-Hardware
 モータドライバのハードウェア設計のためのリポジトリ
 
+# Image
+![image](https://github.com/leap-amr/MotorController-Hardware/blob/development/z-version/imgs/MotorController-Circuit-Top.png)
+
 # Development Software Versions
 Application: KiCad x64 on x64
 
